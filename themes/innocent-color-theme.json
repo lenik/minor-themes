@@ -30,7 +30,7 @@
     "titleBar.inactiveBackground": "#FBF8F9",
     "titleBar.inactiveForeground": "#8E7B8E",
     "statusBar.background": "#F9F5F7",
-    "statusBar.foreground": "#908198",
+    "statusBar.foreground": "#795E88",
     "statusBar.border": "#E9E2E9",
     "tab.activeBackground": "#FFFFFF",
     "tab.activeForeground": "#5D4F64",
@@ -105,7 +105,7 @@
         "constant.language"
       ],
       "settings": {
-        "foreground": "#F7E8F0"
+        "foreground": "#B64A80"
       }
     },
     {
@@ -115,7 +115,7 @@
         "storage.modifier"
       ],
       "settings": {
-        "foreground": "#AF7994"
+        "foreground": "#A3527A"
       }
     },
     {
@@ -134,7 +134,7 @@
         "support.function"
       ],
       "settings": {
-        "foreground": "#D4E0ED"
+        "foreground": "#B64A80"
       }
     },
     {
@@ -143,7 +143,7 @@
         "meta.definition.variable"
       ],
       "settings": {
-        "foreground": "#5D4F64"
+        "foreground": "#4F4455"
       }
     },
     {
@@ -161,7 +161,7 @@
         "entity.name.tag"
       ],
       "settings": {
-        "foreground": "#AF7994"
+        "foreground": "#A3527A"
       }
     },
     {
@@ -177,7 +177,7 @@
         "markup.heading"
       ],
       "settings": {
-        "foreground": "#AF7994",
+        "foreground": "#A3527A",
         "fontStyle": "bold"
       }
     },
