@@ -1,9 +1,9 @@
 {
   "name": "minor-themes",
   "displayName": "Minor Themes",
-  "description": "VS Code color themes: Innocent, Maiden, Light Girl, Dark Girl, Light Morandi, Dark Morandi, and MS-DOS.",
+  "description": "VS Code color themes: Innocent, Maiden, Girl, Morandi, LGBTQ, country flags, MS-DOS, and Matrix II.",
   "icon": "assets/icon.png",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "Lenik",
   "license": "GPL",
   "repository": {
@@ -24,9 +24,34 @@
         "path": "./themes/innocent-color-theme.json"
       },
       {
-        "label": "Maiden",
+        "label": "Light Maiden",
         "uiTheme": "vs",
-        "path": "./themes/maiden-color-theme.json"
+        "path": "./themes/light-maiden-color-theme.json"
+      },
+      {
+        "label": "Dark Maiden",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-maiden-color-theme.json"
+      },
+      {
+        "label": "Light LGBTQ",
+        "uiTheme": "vs",
+        "path": "./themes/light-lgbtq-color-theme.json"
+      },
+      {
+        "label": "Dark LGBTQ",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-lgbtq-color-theme.json"
+      },
+      {
+        "label": "Light Lesbian",
+        "uiTheme": "vs",
+        "path": "./themes/light-lesbian-color-theme.json"
+      },
+      {
+        "label": "Dark Lesbian",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-lesbian-color-theme.json"
       },
       {
         "label": "Light Girl",
@@ -52,6 +77,71 @@
         "label": "MS-DOS",
         "uiTheme": "vs-dark",
         "path": "./themes/ms-dos-color-theme.json"
+      },
+      {
+        "label": "Matrix II",
+        "uiTheme": "vs-dark",
+        "path": "./themes/matrix-ii-color-theme.json"
+      },
+      {
+        "label": "Country: China",
+        "uiTheme": "vs",
+        "path": "./themes/country-china-color-theme.json"
+      },
+      {
+        "label": "Country: Russia",
+        "uiTheme": "vs",
+        "path": "./themes/country-russia-color-theme.json"
+      },
+      {
+        "label": "Country: USA",
+        "uiTheme": "vs",
+        "path": "./themes/country-usa-color-theme.json"
+      },
+      {
+        "label": "Country: Japan",
+        "uiTheme": "vs",
+        "path": "./themes/country-japan-color-theme.json"
+      },
+      {
+        "label": "Country: Ukraine",
+        "uiTheme": "vs",
+        "path": "./themes/country-ukraine-color-theme.json"
+      },
+      {
+        "label": "Country: Canada",
+        "uiTheme": "vs",
+        "path": "./themes/country-canada-color-theme.json"
+      },
+      {
+        "label": "Country: Norway",
+        "uiTheme": "vs-dark",
+        "path": "./themes/country-norway-color-theme.json"
+      },
+      {
+        "label": "Country: UK",
+        "uiTheme": "vs",
+        "path": "./themes/country-uk-color-theme.json"
+      },
+      {
+        "label": "Country: German",
+        "uiTheme": "vs-dark",
+        "path": "./themes/country-german-color-theme.json"
+      },
+      {
+        "label": "Country: Italy",
+        "uiTheme": "vs",
+        "path": "./themes/country-italy-color-theme.json"
+      },
+      {
+        "label": "Country: India",
+        "uiTheme": "vs",
+        "path": "./themes/country-india-color-theme.json"
+      },
+      {
+        "label": "Country: Brasil",
+        "uiTheme": "vs",
+        "path": "./themes/country-brasil-color-theme.json"
       }
     ]
   },
