@@ -1,0 +1,66 @@
+{
+  "name": "minor-themes",
+  "displayName": "Minor Themes",
+  "description": "VS Code color themes: Innocent, Maiden, Light Girl, Dark Girl, Light Morandi, Dark Morandi, and MS-DOS.",
+  "icon": "assets/icon.png",
+  "version": "1.0.0",
+  "publisher": "Lenik",
+  "license": "GPL",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lenik/minor-themes.git"
+  },
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Innocent",
+        "uiTheme": "vs",
+        "path": "./themes/innocent-color-theme.json"
+      },
+      {
+        "label": "Maiden",
+        "uiTheme": "vs",
+        "path": "./themes/maiden-color-theme.json"
+      },
+      {
+        "label": "Light Girl",
+        "uiTheme": "vs",
+        "path": "./themes/light-girl-color-theme.json"
+      },
+      {
+        "label": "Dark Girl",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-girl-color-theme.json"
+      },
+      {
+        "label": "Light Morandi",
+        "uiTheme": "vs",
+        "path": "./themes/light-morandi-color-theme.json"
+      },
+      {
+        "label": "Dark Morandi",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-morandi-color-theme.json"
+      },
+      {
+        "label": "MS-DOS",
+        "uiTheme": "vs-dark",
+        "path": "./themes/ms-dos-color-theme.json"
+      }
+    ]
+  },
+  "scripts": {
+    "generate": "node scripts/generate-themes.mjs",
+    "vscode:prepublish": "pnpm run generate",
+    "package": "vsce package --no-dependencies"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.8.0"
+  }
+}
