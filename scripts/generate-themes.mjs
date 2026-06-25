@@ -213,6 +213,118 @@ const palettes = {
     chartHighlight: [214, 100, 98],
     listFg: [214, 20, 93],
   },
+  lgbtq: {
+    // bright accents over a clean light shell
+    windowBg: [220, 20, 97],
+    windowFg: [225, 18, 16],
+    windowShadow: [220, 18, 35],
+    panelBg: [220, 18, 95],
+    surfaceBg: [0, 0, 100],
+    mutedFg: [225, 10, 42],
+    // violet (purple stripe)
+    actionFg: [275, 65, 45],
+    footerFg: [225, 10, 46],
+    promptBg: [0, 0, 100],
+    promptFg: [225, 18, 14],
+    intervalBg: [220, 20, 92],
+    // blue stripe
+    intervalFg: [210, 80, 42],
+    quoteBg: [225, 22, 94],
+    quoteShadow: [225, 14, 78],
+    // cyan stripe
+    quoteGlow: [190, 85, 45],
+    quoteText: [225, 18, 18],
+    ratingLabel: [225, 12, 38],
+    ratingTrack: [220, 22, 93],
+    ratingKnobRing: [220, 18, 91],
+    ratingKnobFill: [0, 0, 100],
+    ratingKnobCover: [220, 20, 96],
+    ratingMarkerInactive: [220, 16, 90],
+    // red stripe
+    ratingMarkerActive: [355, 80, 48],
+    cardBg: [220, 18, 99],
+    selectedBg: [160, 55, 90],
+    // yellow stripe (used in UI accents; tokens will be contrast-adjusted)
+    todayBg: [50, 95, 70],
+    grid: [220, 16, 86],
+    border: [220, 14, 78],
+    // green stripe
+    weekdayHeader: [145, 60, 38],
+    chartHighlight: [18, 85, 44],
+    listFg: [225, 18, 14],
+  },
+  lesbian: {
+    // orange / pink / magenta accents over a warm light shell
+    windowBg: [25, 35, 97],
+    windowFg: [330, 25, 18],
+    windowShadow: [330, 18, 35],
+    panelBg: [25, 30, 95],
+    surfaceBg: [0, 0, 100],
+    mutedFg: [330, 8, 44],
+    // deep magenta (bottom stripe)
+    actionFg: [330, 70, 44],
+    footerFg: [330, 10, 48],
+    promptBg: [0, 0, 100],
+    promptFg: [330, 25, 16],
+    intervalBg: [25, 28, 92],
+    // orange (top stripe)
+    intervalFg: [24, 95, 45],
+    quoteBg: [340, 35, 95],
+    quoteShadow: [330, 16, 78],
+    // pink stripe
+    quoteGlow: [345, 85, 55],
+    quoteText: [330, 25, 18],
+    ratingLabel: [330, 12, 40],
+    ratingTrack: [25, 25, 93],
+    ratingKnobRing: [25, 20, 91],
+    ratingKnobFill: [0, 0, 100],
+    ratingKnobCover: [25, 25, 96],
+    ratingMarkerInactive: [25, 18, 90],
+    // red-orange stripe
+    ratingMarkerActive: [12, 90, 48],
+    cardBg: [25, 25, 99],
+    selectedBg: [345, 55, 90],
+    todayBg: [24, 95, 70],
+    grid: [25, 18, 86],
+    border: [25, 16, 78],
+    weekdayHeader: [330, 55, 36],
+    chartHighlight: [12, 80, 42],
+    listFg: [330, 25, 16],
+  },
+  matrix2: {
+    // neon green on near-black, with subtle glass panels (Matrix II)
+    windowBg: [150, 30, 6],
+    windowFg: [135, 55, 80],
+    windowShadow: [150, 35, 2],
+    panelBg: [150, 28, 8],
+    surfaceBg: [150, 25, 5],
+    mutedFg: [135, 18, 58],
+    actionFg: [135, 85, 55],
+    footerFg: [135, 16, 62],
+    promptBg: [150, 22, 10],
+    promptFg: [135, 55, 90],
+    intervalBg: [150, 18, 9],
+    intervalFg: [135, 35, 72],
+    quoteBg: [150, 30, 7],
+    quoteShadow: [150, 20, 14],
+    quoteGlow: [135, 95, 60],
+    quoteText: [135, 40, 90],
+    ratingLabel: [135, 20, 65],
+    ratingTrack: [150, 22, 8],
+    ratingKnobRing: [150, 22, 9],
+    ratingKnobFill: [150, 22, 7],
+    ratingKnobCover: [150, 25, 8],
+    ratingMarkerInactive: [150, 20, 10],
+    ratingMarkerActive: [135, 90, 62],
+    cardBg: [150, 20, 10],
+    selectedBg: [135, 60, 18],
+    todayBg: [135, 90, 45],
+    grid: [150, 14, 18],
+    border: [150, 16, 26],
+    weekdayHeader: [135, 70, 58],
+    chartHighlight: [135, 75, 92],
+    listFg: [135, 55, 88],
+  },
 };
 
 /** @param {number} h @param {number} s @param {number} l */
@@ -291,6 +403,123 @@ function darkVariant(light) {
   });
 }
 
+/**
+ * Flag-inspired palette for country themes.
+ * @param {[number, number, number]} primary
+ * @param {[number, number, number]} secondary
+ * @param {[number, number, number]} accent
+ * @param {{ isDark?: boolean }} [options]
+ * @returns {Palette}
+ */
+function countryPalette(primary, secondary, accent, { isDark = false } = {}) {
+  /** @param {[number, number, number]} c @param {number} maxS */
+  const tone = (c, maxS) => ({ h: c[0], s: Math.min(c[1], maxS), l: c[2] });
+
+  if (isDark) {
+    const shellHue = primary[0];
+    const shellSat = Math.min(primary[1], 35);
+    return {
+      windowBg: { h: shellHue, s: shellSat, l: 10 },
+      windowFg: { h: 0, s: 0, l: 94 },
+      windowShadow: { h: shellHue, s: shellSat + 8, l: 4 },
+      panelBg: { h: shellHue, s: shellSat, l: 11 },
+      surfaceBg: { h: shellHue, s: shellSat + 4, l: 8 },
+      mutedFg: { h: secondary[0], s: Math.min(secondary[1], 28), l: 62 },
+      actionFg: tone(primary, 90),
+      footerFg: { h: 0, s: 0, l: 62 },
+      promptBg: { h: shellHue, s: shellSat, l: 14 },
+      promptFg: { h: 0, s: 0, l: 96 },
+      intervalBg: { h: shellHue, s: Math.max(shellSat - 6, 8), l: 12 },
+      intervalFg: tone(secondary, 90),
+      quoteBg: { h: shellHue, s: shellSat, l: 12 },
+      quoteShadow: { h: shellHue, s: shellSat, l: 20 },
+      quoteGlow: tone(accent, 95),
+      quoteText: { h: 0, s: 0, l: 90 },
+      ratingLabel: { h: 0, s: 0, l: 65 },
+      ratingTrack: { h: shellHue, s: shellSat, l: 10 },
+      ratingKnobRing: { h: shellHue, s: shellSat, l: 12 },
+      ratingKnobFill: { h: shellHue, s: shellSat, l: 9 },
+      ratingKnobCover: { h: shellHue, s: shellSat, l: 11 },
+      ratingMarkerInactive: { h: shellHue, s: Math.max(shellSat - 8, 6), l: 16 },
+      ratingMarkerActive: tone(accent, 95),
+      cardBg: { h: shellHue, s: Math.max(shellSat - 6, 8), l: 12 },
+      selectedBg: { h: primary[0], s: Math.min(primary[1], 50), l: 22 },
+      todayBg: { h: accent[0], s: Math.min(accent[1], 75), l: 28 },
+      grid: { h: shellHue, s: Math.max(shellSat - 10, 6), l: 22 },
+      border: { h: secondary[0], s: Math.min(secondary[1], 45), l: 38 },
+      weekdayHeader: tone(accent, 90),
+      chartHighlight: { h: primary[0], s: Math.min(primary[1], 65), l: 85 },
+      listFg: { h: 0, s: 0, l: 92 },
+    };
+  }
+
+  const shellHue = secondary[1] < 12 ? primary[0] : secondary[0];
+  const shellSat = Math.min(Math.max(secondary[1], 8), 22);
+  const fgL = Math.max(14, primary[2] - 30);
+
+  return {
+    windowBg: { h: shellHue, s: shellSat, l: 97 },
+    windowFg: { h: primary[0], s: Math.min(primary[1], 55), l: fgL },
+    windowShadow: { h: primary[0], s: Math.min(primary[1], 40), l: 35 },
+    panelBg: { h: shellHue, s: shellSat, l: 95 },
+    surfaceBg: { h: 0, s: 0, l: 100 },
+    mutedFg: { h: primary[0], s: Math.min(primary[1], 15), l: 42 },
+    actionFg: tone(primary, 95),
+    footerFg: { h: primary[0], s: Math.min(primary[1], 12), l: 46 },
+    promptBg: { h: 0, s: 0, l: 100 },
+    promptFg: { h: primary[0], s: Math.min(primary[1], 55), l: Math.max(12, fgL - 2) },
+    intervalBg: { h: secondary[0], s: Math.min(Math.max(secondary[1], 10), 28), l: 92 },
+    intervalFg: tone(secondary, 95),
+    quoteBg: { h: shellHue, s: shellSat, l: 94 },
+    quoteShadow: { h: shellHue, s: Math.max(shellSat - 4, 6), l: 78 },
+    quoteGlow: tone(accent, 95),
+    quoteText: { h: primary[0], s: Math.min(primary[1], 50), l: Math.max(14, fgL - 2) },
+    ratingLabel: { h: primary[0], s: Math.min(primary[1], 12), l: 38 },
+    ratingTrack: { h: shellHue, s: shellSat, l: 93 },
+    ratingKnobRing: { h: shellHue, s: Math.max(shellSat - 2, 6), l: 91 },
+    ratingKnobFill: { h: 0, s: 0, l: 100 },
+    ratingKnobCover: { h: shellHue, s: shellSat, l: 96 },
+    ratingMarkerInactive: { h: shellHue, s: Math.max(shellSat - 4, 6), l: 90 },
+    ratingMarkerActive: {
+      h: accent[0],
+      s: Math.min(accent[1], 90),
+      l: Math.max(accent[2] - 8, 36),
+    },
+    cardBg: { h: shellHue, s: Math.max(shellSat - 5, 6), l: 99 },
+    selectedBg: { h: secondary[0], s: Math.min(secondary[1], 42), l: 88 },
+    todayBg: { h: accent[0], s: Math.min(accent[1], 80), l: 85 },
+    grid: { h: shellHue, s: Math.max(shellSat - 5, 6), l: 86 },
+    border: { h: primary[0], s: Math.min(primary[1], 28), l: 78 },
+    weekdayHeader: {
+      h: accent[0],
+      s: Math.min(accent[1], 75),
+      l: Math.max(accent[2] - 10, 32),
+    },
+    chartHighlight: {
+      h: primary[0],
+      s: Math.min(primary[1], 65),
+      l: Math.max(primary[2] - 18, 22),
+    },
+    listFg: { h: primary[0], s: Math.min(primary[1], 55), l: Math.max(12, fgL - 2) },
+  };
+}
+
+/** Country theme definitions: [label, slug, primary, secondary, accent, isDark] */
+const countryThemes = [
+  ["China", "china", [7, 88, 46], [45, 95, 48], [7, 75, 38], false],
+  ["Russia", "russia", [355, 78, 48], [220, 100, 36], [220, 60, 55], false],
+  ["USA", "usa", [355, 90, 45], [220, 100, 32], [220, 80, 55], false],
+  ["Japan", "japan", [355, 78, 42], [0, 5, 96], [355, 65, 55], false],
+  ["Ukraine", "ukraine", [215, 100, 38], [50, 100, 50], [215, 85, 55], false],
+  ["Canada", "canada", [0, 100, 45], [0, 5, 96], [355, 70, 55], false],
+  ["Norway", "norway", [355, 88, 42], [220, 100, 18], [220, 70, 55], true],
+  ["UK", "uk", [355, 85, 42], [220, 100, 28], [220, 75, 58], false],
+  ["German", "german", [355, 90, 45], [50, 100, 48], [0, 0, 22], true],
+  ["Italy", "italy", [145, 100, 32], [355, 78, 45], [145, 70, 42], false],
+  ["India", "india", [28, 100, 58], [140, 85, 32], [220, 65, 28], false],
+  ["Brasil", "brasil", [145, 100, 32], [50, 100, 50], [220, 100, 24], false],
+];
+
 /** @param {Palette} p */
 function hex(p) {
   /** @type {Record<string, string>} */
@@ -303,11 +532,17 @@ function hex(p) {
 
 /** @param {Record<string, string>} c @param {boolean} isDark */
 function workbenchColors(c, isDark) {
+  const ensureFg = (fg, bg, min = 4.5) => ensureContrast(fg, bg, min);
+  const editorFg = ensureFg(c.windowFg, c.surfaceBg, 4.5);
+  const sideFg = ensureFg(c.listFg, c.windowBg, 4.5);
+  const statusFg = ensureFg(c.footerFg, c.panelBg, 4.5);
+  const inputFg = ensureFg(c.promptFg, c.promptBg, 4.5);
+
   return {
     focusBorder: c.border,
     foreground: c.windowFg,
     "editor.background": c.surfaceBg,
-    "editor.foreground": c.windowFg,
+    "editor.foreground": editorFg,
     "editor.selectionBackground": c.selectedBg + (isDark ? "80" : "66"),
     "editor.lineHighlightBackground": c.panelBg + (isDark ? "99" : "CC"),
     "editorCursor.foreground": c.actionFg,
@@ -319,7 +554,7 @@ function workbenchColors(c, isDark) {
     "editorBracketMatch.background": c.selectedBg + "55",
     "editorBracketMatch.border": c.actionFg,
     "sideBar.background": c.windowBg,
-    "sideBar.foreground": c.listFg,
+    "sideBar.foreground": sideFg,
     "sideBar.border": c.grid,
     "sideBarTitle.foreground": c.windowFg,
     "activityBar.background": c.panelBg,
@@ -332,7 +567,7 @@ function workbenchColors(c, isDark) {
     "titleBar.inactiveBackground": c.windowBg,
     "titleBar.inactiveForeground": c.mutedFg,
     "statusBar.background": c.panelBg,
-    "statusBar.foreground": c.footerFg,
+    "statusBar.foreground": statusFg,
     "statusBar.border": c.grid,
     "tab.activeBackground": c.surfaceBg,
     "tab.activeForeground": c.windowFg,
@@ -343,7 +578,7 @@ function workbenchColors(c, isDark) {
     "panel.background": c.panelBg,
     "panel.border": c.grid,
     "terminal.background": c.surfaceBg,
-    "terminal.foreground": c.windowFg,
+    "terminal.foreground": editorFg,
     "terminal.ansiBlack": isDark ? c.surfaceBg : c.windowFg,
     "terminal.ansiRed": c.actionFg,
     "terminal.ansiGreen": c.weekdayHeader,
@@ -353,11 +588,11 @@ function workbenchColors(c, isDark) {
     "terminal.ansiCyan": c.mutedFg,
     "terminal.ansiWhite": c.windowFg,
     "input.background": c.promptBg,
-    "input.foreground": c.promptFg,
+    "input.foreground": inputFg,
     "input.border": c.border,
     "inputOption.activeBorder": c.actionFg,
     "dropdown.background": c.promptBg,
-    "dropdown.foreground": c.promptFg,
+    "dropdown.foreground": inputFg,
     "dropdown.border": c.border,
     "list.activeSelectionBackground": c.selectedBg,
     "list.activeSelectionForeground": c.windowFg,
@@ -383,16 +618,98 @@ function workbenchColors(c, isDark) {
   };
 }
 
+/** @param {string} hex */
+function hexToRgb(hex) {
+  const h = hex.replace("#", "");
+  return [
+    parseInt(h.slice(0, 2), 16),
+    parseInt(h.slice(2, 4), 16),
+    parseInt(h.slice(4, 6), 16),
+  ];
+}
+
+/** @param {[number, number, number]} rgb */
+function relativeLuminance(rgb) {
+  const linear = rgb.map((c) => {
+    c /= 255;
+    return c <= 0.03928 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4;
+  });
+  return 0.2126 * linear[0] + 0.7152 * linear[1] + 0.0722 * linear[2];
+}
+
+/** @param {string} fg @param {string} bg */
+function contrastRatio(fg, bg) {
+  const l1 = relativeLuminance(hexToRgb(fg));
+  const l2 = relativeLuminance(hexToRgb(bg));
+  return (Math.max(l1, l2) + 0.05) / (Math.min(l1, l2) + 0.05);
+}
+
+/** @param {string} hex */
+function hexToHsl(hex) {
+  const [r, g, b] = hexToRgb(hex).map((c) => c / 255);
+  const max = Math.max(r, g, b);
+  const min = Math.min(r, g, b);
+  const l = (max + min) / 2;
+  if (max === min) {
+    return { h: 0, s: 0, l: l * 100 };
+  }
+  const d = max - min;
+  const s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+  let h;
+  switch (max) {
+    case r:
+      h = ((g - b) / d + (g < b ? 6 : 0)) / 6;
+      break;
+    case g:
+      h = ((b - r) / d + 2) / 6;
+      break;
+    default:
+      h = ((r - g) / d + 4) / 6;
+  }
+  return { h: h * 360, s: s * 100, l: l * 100 };
+}
+
+/**
+ * Push a token color away from the editor background until contrast is met.
+ * @param {string} tokenHex
+ * @param {string} bgHex
+ * @param {number} minRatio
+ */
+function ensureContrast(tokenHex, bgHex, minRatio = 4.5) {
+  let { h, s, l } = hexToHsl(tokenHex);
+  const bgL = hexToHsl(bgHex).l;
+  const lighten = bgL < 50;
+
+  for (let i = 0; i < 50; i++) {
+    const current = hslToHex(h, s, l);
+    if (contrastRatio(current, bgHex) >= minRatio) {
+      return current;
+    }
+    if (lighten) {
+      l = Math.min(92, l + 5);
+      s = Math.min(100, s + 2);
+    } else {
+      l = Math.max(8, l - 5);
+      s = Math.min(100, s + 4);
+    }
+  }
+  return hslToHex(h, s, lighten ? 88 : 22);
+}
+
 /** @param {Record<string, string>} c @param {boolean} isDark */
 function tokenColors(c, isDark) {
-  const comment = c.mutedFg;
-  const string = c.weekdayHeader;
-  const keyword = c.actionFg;
-  const type = c.intervalFg;
-  const number = c.todayBg;
-  const function_ = c.quoteGlow;
-  const variable = c.windowFg;
-  const constant = c.chartHighlight;
+  const bg = c.surfaceBg;
+  const ensure = (hex, min = 4.5) => ensureContrast(hex, bg, min);
+
+  const comment = ensure(c.mutedFg, 3.0);
+  const string = ensure(c.weekdayHeader);
+  const number = ensure(isDark ? c.quoteGlow : c.ratingMarkerActive);
+  const keyword = ensure(c.actionFg);
+  const type = ensure(c.intervalFg);
+  const function_ = ensure(isDark ? c.quoteGlow : c.ratingMarkerActive);
+  const variable = ensure(c.listFg);
+  const constant = ensure(c.chartHighlight);
+  const quoteText = ensure(c.quoteText);
 
   return [
     { scope: ["comment", "punctuation.definition.comment"], settings: { foreground: comment, fontStyle: "italic" } },
@@ -408,7 +725,7 @@ function tokenColors(c, isDark) {
     { scope: ["markup.heading"], settings: { foreground: keyword, fontStyle: "bold" } },
     { scope: ["markup.bold"], settings: { fontStyle: "bold" } },
     { scope: ["markup.italic"], settings: { fontStyle: "italic" } },
-    { scope: ["markup.quote"], settings: { foreground: c.quoteText, background: c.quoteBg + (isDark ? "44" : "33") } },
+    { scope: ["markup.quote"], settings: { foreground: quoteText, background: c.quoteBg + (isDark ? "44" : "33") } },
     { scope: ["invalid", "invalid.illegal"], settings: { foreground: isDark ? "#FF6B6B" : "#C62828" } },
   ];
 }
@@ -429,15 +746,31 @@ mkdirSync(themesDir, { recursive: true });
 
 const girl = toPalette(palettes.girl);
 const morandi = toPalette(palettes.morandi);
+const maiden = toPalette(palettes.maiden);
+const lgbtq = toPalette(palettes.lgbtq);
+const lesbian = toPalette(palettes.lesbian);
+const matrix2 = toPalette(palettes.matrix2);
 
 const themeDefs = [
   ["Innocent", toPalette(palettes.innocent), false, "innocent-color-theme.json"],
-  ["Maiden", toPalette(palettes.maiden), false, "maiden-color-theme.json"],
+  ["Light Maiden", maiden, false, "light-maiden-color-theme.json"],
+  ["Dark Maiden", darkVariant(maiden), true, "dark-maiden-color-theme.json"],
+  ["Light LGBTQ", lgbtq, false, "light-lgbtq-color-theme.json"],
+  ["Dark LGBTQ", darkVariant(lgbtq), true, "dark-lgbtq-color-theme.json"],
+  ["Light Lesbian", lesbian, false, "light-lesbian-color-theme.json"],
+  ["Dark Lesbian", darkVariant(lesbian), true, "dark-lesbian-color-theme.json"],
   ["Light Girl", girl, false, "light-girl-color-theme.json"],
   ["Dark Girl", darkVariant(girl), true, "dark-girl-color-theme.json"],
   ["Light Morandi", morandi, false, "light-morandi-color-theme.json"],
   ["Dark Morandi", darkVariant(morandi), true, "dark-morandi-color-theme.json"],
   ["MS-DOS", toPalette(palettes.msdos), true, "ms-dos-color-theme.json"],
+  ["Matrix II", matrix2, true, "matrix-ii-color-theme.json"],
+  ...countryThemes.map(([label, slug, primary, secondary, accent, isDark]) => [
+    `Country: ${label}`,
+    countryPalette(primary, secondary, accent, { isDark }),
+    isDark,
+    `country-${slug}-color-theme.json`,
+  ]),
 ];
 
 for (const [label, palette, isDark, file] of themeDefs) {
