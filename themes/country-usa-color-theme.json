@@ -71,7 +71,7 @@
     "scrollbarSlider.hoverBackground": "#D7B7BA99",
     "scrollbarSlider.activeBackground": "#DA0B1DAA",
     "minimap.selectionHighlight": "#D4DCEDAA",
-    "gitDecoration.modifiedResourceForeground": "#BACFF7",
+    "gitDecoration.modifiedResourceForeground": "#8A6508",
     "gitDecoration.deletedResourceForeground": "#DA0B1D",
     "gitDecoration.untrackedResourceForeground": "#1D56C9",
     "peekView.border": "#D7B7BA",

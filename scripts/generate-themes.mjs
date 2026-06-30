@@ -530,8 +530,8 @@ function hex(p) {
   return out;
 }
 
-/** @param {Record<string, string>} c @param {boolean} isDark */
-function workbenchColors(c, isDark) {
+/** @param {Record<string, string>} c @param {boolean} isDark @param {{ modified: string, deleted: string, untracked: string }} git */
+function workbenchColors(c, isDark, git) {
   const ensureFg = (fg, bg, min = 4.5) => ensureContrast(fg, bg, min);
   const editorFg = ensureFg(c.windowFg, c.surfaceBg, 4.5);
   const sideFg = ensureFg(c.listFg, c.windowBg, 4.5);
@@ -608,9 +608,9 @@ function workbenchColors(c, isDark) {
     "scrollbarSlider.hoverBackground": c.border + "99",
     "scrollbarSlider.activeBackground": c.actionFg + "AA",
     "minimap.selectionHighlight": c.selectedBg + "AA",
-    "gitDecoration.modifiedResourceForeground": c.todayBg,
-    "gitDecoration.deletedResourceForeground": c.actionFg,
-    "gitDecoration.untrackedResourceForeground": c.weekdayHeader,
+    "gitDecoration.modifiedResourceForeground": git.modified,
+    "gitDecoration.deletedResourceForeground": git.deleted,
+    "gitDecoration.untrackedResourceForeground": git.untracked,
     "peekView.border": c.border,
     "peekViewEditor.background": c.quoteBg,
     "peekViewTitle.background": c.panelBg,
@@ -696,6 +696,139 @@ function ensureContrast(tokenHex, bgHex, minRatio = 4.5) {
   return hslToHex(h, s, lighten ? 88 : 22);
 }
 
+/**
+ * Hand-crafted git status foregrounds on panel.background.
+ * modified = amber/gold, deleted = red, untracked = green (or theme-accent blue where noted).
+ * @type {Record<string, { modified: string, deleted: string, untracked: string }>}
+ */
+const gitDecorations = {
+  "innocent-color-theme.json": {
+    modified: "#9A7209",
+    deleted: "#B84A62",
+    untracked: "#4A6E58",
+  },
+  "light-maiden-color-theme.json": {
+    modified: "#8A6E09",
+    deleted: "#B33A32",
+    untracked: "#3D6B4F",
+  },
+  "dark-maiden-color-theme.json": {
+    modified: "#E8C547",
+    deleted: "#E88B8B",
+    untracked: "#7BA88A",
+  },
+  "light-lgbtq-color-theme.json": {
+    modified: "#8A6600",
+    deleted: "#A828A0",
+    untracked: "#1E8F52",
+  },
+  "dark-lgbtq-color-theme.json": {
+    modified: "#F5D742",
+    deleted: "#D070F0",
+    untracked: "#3FD47A",
+  },
+  "light-lesbian-color-theme.json": {
+    modified: "#B85608",
+    deleted: "#BF2270",
+    untracked: "#2A7D5F",
+  },
+  "dark-lesbian-color-theme.json": {
+    modified: "#FF8C38",
+    deleted: "#F04090",
+    untracked: "#5CB88A",
+  },
+  "light-girl-color-theme.json": {
+    modified: "#8A5E00",
+    deleted: "#C41E14",
+    untracked: "#2D7A58",
+  },
+  "dark-girl-color-theme.json": {
+    modified: "#F0B429",
+    deleted: "#FF6B5E",
+    untracked: "#5EAA82",
+  },
+  "light-morandi-color-theme.json": {
+    modified: "#7A6228",
+    deleted: "#9E5848",
+    untracked: "#4A7562",
+  },
+  "dark-morandi-color-theme.json": {
+    modified: "#C9A84C",
+    deleted: "#D08888",
+    untracked: "#7DB89A",
+  },
+  "ms-dos-color-theme.json": {
+    modified: "#FFFF57",
+    deleted: "#FF6B6B",
+    untracked: "#5EFFFF",
+  },
+  "matrix-ii-color-theme.json": {
+    modified: "#E8C840",
+    deleted: "#FF6B6B",
+    untracked: "#4DD4B0",
+  },
+  "country-china-color-theme.json": {
+    modified: "#8A6808",
+    deleted: "#C41E14",
+    untracked: "#2E6B3E",
+  },
+  "country-russia-color-theme.json": {
+    modified: "#8A6508",
+    deleted: "#DA1B2B",
+    untracked: "#2E5CB8",
+  },
+  "country-usa-color-theme.json": {
+    modified: "#8A6508",
+    deleted: "#DA0B1D",
+    untracked: "#1D56C9",
+  },
+  "country-japan-color-theme.json": {
+    modified: "#8A6508",
+    deleted: "#BF1825",
+    untracked: "#2D5E3A",
+  },
+  "country-ukraine-color-theme.json": {
+    modified: "#8A6808",
+    deleted: "#C62828",
+    untracked: "#0552BD",
+  },
+  "country-canada-color-theme.json": {
+    modified: "#8A5408",
+    deleted: "#E00606",
+    untracked: "#2D6B40",
+  },
+  "country-norway-color-theme.json": {
+    modified: "#E8C547",
+    deleted: "#F05060",
+    untracked: "#5C8FE8",
+  },
+  "country-uk-color-theme.json": {
+    modified: "#8A6808",
+    deleted: "#C6101F",
+    untracked: "#1F5CD6",
+  },
+  "country-german-color-theme.json": {
+    modified: "#E8C547",
+    deleted: "#F05060",
+    untracked: "#7A9E82",
+  },
+  "country-italy-color-theme.json": {
+    modified: "#8A6808",
+    deleted: "#C62828",
+    untracked: "#037A35",
+  },
+  "country-india-color-theme.json": {
+    modified: "#B5600A",
+    deleted: "#C62828",
+    untracked: "#1B7A42",
+  },
+  "country-brasil-color-theme.json": {
+    modified: "#8A7200",
+    deleted: "#C0392B",
+    untracked: "#047A35",
+  },
+};
+
 /** @param {Record<string, string>} c @param {boolean} isDark */
 function tokenColors(c, isDark) {
   const bg = c.surfaceBg;
@@ -733,10 +866,14 @@ function tokenColors(c, isDark) {
 /** @param {string} label @param {Palette} palette @param {boolean} isDark @param {string} fileName */
 function buildTheme(label, palette, isDark, fileName) {
   const c = hex(palette);
+  const git = gitDecorations[fileName];
+  if (!git) {
+    throw new Error(`Missing gitDecorations for ${fileName}`);
+  }
   const theme = {
     name: label,
     type: isDark ? "dark" : "light",
-    colors: workbenchColors(c, isDark),
+    colors: workbenchColors(c, isDark, git),
     tokenColors: tokenColors(c, isDark),
   };
   writeFileSync(join(themesDir, fileName), JSON.stringify(theme, null, 2) + "\n");
