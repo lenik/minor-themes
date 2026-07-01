@@ -2,6 +2,21 @@
 
 All notable changes to this extension are documented in this file.
 
+## [1.0.7] — 2026-07-01
+
+### Added
+
+- **Dark Innocent** — lavender-twilight shell with lilac-mist text, dusty rose cursor, and periwinkle glow; paired with the existing Innocent light theme.
+- **Light X-Files** and **Dark X-Files** — manila-folder fluorescent bureaucracy (light) and forest-night CRT / flashlight investigation (dark), inspired by *The X-Files*.
+- **Light Only Yesterday** and **Dark Only Yesterday** — sun-washed Yamagata memory (light) and tatami-dusk safflower lantern (dark), inspired by *Omohide Poro Poro* (1991).
+- Hand-crafted syntax token palettes for all six new theme JSON files.
+
+### Changed
+
+- Redesigned dark workbench and token color language for **Maiden**, **Girl**, **Morandi**, **LGBTQ**, and **Lesbian** — each dark palette now expresses the theme’s essence (ink-and-vellum, coral screen-glow, painter’s studio umber, rain-slick pride neon, terracotta skin-warmth) instead of generic wine-plum or magenta nights.
+- README theme guides (English and Chinese): Innocent light/dark pair; revised dark descriptions for aesthetic themes; new X-Files and Only Yesterday sections.
+- Extension manifest registers **48 themes** (version **1.0.7**).
+
 ## [1.0.6] — 2026-07-01
 
 ### Added
