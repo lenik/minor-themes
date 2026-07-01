@@ -10,7 +10,9 @@ Each palette is defined in `scripts/generate-themes.mjs` and shared with the [Ui
 
 **Meaning:** *Innocent* — pure, gentle, unassuming.
 
-A single light theme built on blush rose and soft lavender (hues ~280–340°). Backgrounds stay near white with a faint pink wash; text is muted purple-gray. Accents are dusty rose and periwinkle — selection, cursor, and brackets feel airy rather than loud. Syntax: keywords in rose, strings in violet-gray, numbers in deeper pink. Best if you want a calm, feminine editor that never strains the eyes.
+**Innocent (light)** — Blush rose and soft lavender (hues ~280–340°). Backgrounds stay near white with a faint pink wash; text is muted purple-gray. Accents are dusty rose and periwinkle — selection, cursor, and brackets feel airy rather than loud. Syntax: keywords in rose, strings in violet-gray, numbers in deeper pink. Calm, feminine, easy on the eyes.
+
+**Dark Innocent** — **Lavender twilight**: soft **purple dusk** shell (not neutral gray), **lilac-mist** text, **dusty rose** cursor and **periwinkle** glow. Innocence doesn't vanish in darkness — it becomes a quiet, ethereal night. Softer and cooler than Dark Maiden's ink-and-vellum warmth.
 
 ### Maiden
 
