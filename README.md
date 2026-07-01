@@ -18,7 +18,7 @@ A single light theme built on blush rose and soft lavender (hues ~280–340°). 
 
 **Light Maiden** — Warm shell pink (low saturation red, ~94% lightness) with **deep rose-red** body text and **golden-yellow** highlights (`today`, strings, git untracked). Olive-green line numbers add a vintage touch. Feels like handwritten stationery — soft surface, strong readable ink.
 
-**Dark Maiden** — A **rose-and-gold night**: warm wine-plum panels (not generic gray), blush-white text, golden accents and sage line numbers. Same romantic register as the light theme, but like reading by lamplight in a quiet room.
+**Dark Maiden** — **Ink and wax by lamplight**: aged **vellum** shadow (warm umber, not magenta gray), **iron-gall rose ink** text, **honey-gold** highlights, **dried sage** line numbers. The light theme’s stationery becomes a letter read in a quiet room — literary, restrained, pre-modern femininity.
 
 ### Girl
 
@@ -26,7 +26,7 @@ A single light theme built on blush rose and soft lavender (hues ~280–340°). 
 
 **Light Girl** — High-saturation **coral-red** panel (~h 4–6°) on white, with **hot pink** quotes and **sky-blue** intervals. Accents are loud: full-strength red cursor, cyan selections, yellow “today” markers.
 
-**Dark Girl** — **Neon kawaii night**: deep magenta shell, coral cursor, teal interval accents, pink quote glow. The same bold coral / pink / cyan personality — tuned for a dark room, not muted down.
+**Dark Girl** — **Screen glow in a warm dark room**: **coral-black** shell (not purple “anime night”), loud coral cursor, **cyan LED** intervals, **hot-pink** quote stickers. Same bold confidence as the light theme — youth energy tuned for dim light, not muted into pastel darkness.
 
 ### Morandi
 
@@ -34,7 +34,7 @@ A single light theme built on blush rose and soft lavender (hues ~280–340°). 
 
 **Light Morandi** — Warm **greige** window (~h 35°, low saturation) and **blue-gray** text (~h 230°). Accents are desaturated teal and dusty rose — nothing neon. Borders and grids are soft; contrast is deliberately restrained.
 
-**Dark Morandi** — **Muted twilight**: blue-gray olive shell, dusty sage and teal highlights on charcoal — still gallery-quiet, still low saturation, easy on the eyes for long sessions.
+**Dark Morandi** — **Studio at closing**: **umber ochre** shadow (his bottle browns), **chalk-dust** cool gray text, **dusty teal** and **faded sage** accents — pigments whispering in low north light. Still gallery-quiet; saturation stays deliberately low.
 
 ### LGBTQ
 
@@ -53,7 +53,7 @@ Stripe colors appear as accents (not full-background stripes):
 
 **Light LGBTQ** — Neutral cool-gray shell; stripe hues as readable accents. Celebratory without painting the whole editor in stripes.
 
-**Dark LGBTQ** — **Pride on midnight**: deep navy shell with the same stripe family glowing brighter on dark — violet actions, green strings, yellow highlights, cyan numbers.
+**Dark LGBTQ** — **Rain-slick night parade**: deep **storm indigo** shell holding space for stripe hues to glow like **wet neon signage** — violet actions, green strings, yellow highlights, cyan numbers. Celebration needs darkness as backdrop, not as mute.
 
 ### Lesbian
 
@@ -61,7 +61,7 @@ Stripe colors appear as accents (not full-background stripes):
 
 **Light Lesbian** — **Dusk on a shared balcony**: warm peach shell (~h 25°), **sunset orange** intervals, **blush pink** quote glow, **deep rose-magenta** keywords and cursor — intimate, tender, not fragile.
 
-**Dark Lesbian** — **Warm ember night**: deep burgundy-plum shell, orange and pink glow on shadow — embers, not neon. Same emotional register as the light theme: close, bodily, quiet confidence. (Compared with LGBTQ’s outward spectrum, Lesbian stays in one warm band.)
+**Dark Lesbian** — **Skin warmth after sunset**: **terracotta umber** shadow (not wine-plum), **ember orange** and **blush pink** glow on cocoa depth — closeness held in one warm band. Inward, bodily, quiet confidence; distinct from Maiden’s literary rose.
 
 ### MS-DOS
 
