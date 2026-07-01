@@ -4,7 +4,7 @@ A collection of VS Code color themes — soft pastels, pride palettes, retro ter
 
 ## Theme guide
 
-Each palette is defined in `scripts/generate-themes.mjs` and shared with the [UiTheme](https://github.com/lenik) project. Light/dark pairs use the same accent hues; dark variants keep those accents on a deep blue-gray shell.
+Each palette is defined in `scripts/generate-themes.mjs` and shared with the [UiTheme](https://github.com/lenik) project. Light/dark pairs are **separate hand-crafted palettes** — not derived from one another.
 
 ### Innocent
 
@@ -16,25 +16,31 @@ A single light theme built on blush rose and soft lavender (hues ~280–340°). 
 
 **Meaning:** *Maiden* — young woman; also the romantic, delicate sense of “maidenly.”
 
-Warm shell pink (low saturation red, ~94% lightness) with **deep rose-red** body text and **golden-yellow** highlights (`today`, strings, git untracked). Olive-green line numbers add a vintage touch. Dark Maiden keeps those rose and gold accents on a charcoal shell. Feels like handwritten stationery — soft surface, strong readable ink.
+**Light Maiden** — Warm shell pink (low saturation red, ~94% lightness) with **deep rose-red** body text and **golden-yellow** highlights (`today`, strings, git untracked). Olive-green line numbers add a vintage touch. Feels like handwritten stationery — soft surface, strong readable ink.
+
+**Dark Maiden** — A **rose-and-gold night**: warm wine-plum panels (not generic gray), blush-white text, golden accents and sage line numbers. Same romantic register as the light theme, but like reading by lamplight in a quiet room.
 
 ### Girl
 
 **Meaning:** *Girl* — youthful, bold, playful (not “girly” as in childish — more vivid and confident).
 
-High-saturation **coral-red** panel (~h 4–6°) on white, with **hot pink** quotes and **sky-blue** intervals. Accents are loud: full-strength red cursor, cyan selections, yellow “today” markers. Dark Girl preserves the coral/pink/cyan energy on a dark base. For people who like their theme to have personality.
+**Light Girl** — High-saturation **coral-red** panel (~h 4–6°) on white, with **hot pink** quotes and **sky-blue** intervals. Accents are loud: full-strength red cursor, cyan selections, yellow “today” markers.
+
+**Dark Girl** — **Neon kawaii night**: deep magenta shell, coral cursor, teal interval accents, pink quote glow. The same bold coral / pink / cyan personality — tuned for a dark room, not muted down.
 
 ### Morandi
 
 **Meaning:** Named after Italian painter **Giorgio Morandi** — his still lifes are famous for dusty, muted, harmonious grays.
 
-Warm **greige** window (~h 35°, low saturation) and **blue-gray** text (~h 230°). Accents are desaturated teal and dusty rose — nothing neon. Borders and grids are soft; contrast is deliberately restrained. Dark Morandi shifts to a cool charcoal while keeping Morandi’s muted blue-green highlights. Calm, gallery-like, easy on the eyes for long sessions.
+**Light Morandi** — Warm **greige** window (~h 35°, low saturation) and **blue-gray** text (~h 230°). Accents are desaturated teal and dusty rose — nothing neon. Borders and grids are soft; contrast is deliberately restrained.
+
+**Dark Morandi** — **Muted twilight**: blue-gray olive shell, dusty sage and teal highlights on charcoal — still gallery-quiet, still low saturation, easy on the eyes for long sessions.
 
 ### LGBTQ
 
 **Meaning:** Colors drawn from the **rainbow pride flag** (Gilbert Baker design).
 
-Neutral cool-gray shell; stripe colors appear as accents:
+Stripe colors appear as accents (not full-background stripes):
 
 | Stripe | Role in UI |
 |--------|------------|
@@ -43,15 +49,19 @@ Neutral cool-gray shell; stripe colors appear as accents:
 | Green | Strings, weekday headers |
 | Blue | Types, intervals |
 | Violet | Keywords, cursor, actions |
-| Cyan | Quote glow, numbers (dark) |
+| Cyan | Quote glow, numbers |
 
-Dark LGBTQ inverts to a dark shell with the same hue family. Celebratory without painting the whole editor in stripes.
+**Light LGBTQ** — Neutral cool-gray shell; stripe hues as readable accents. Celebratory without painting the whole editor in stripes.
+
+**Dark LGBTQ** — **Pride on midnight**: deep navy shell with the same stripe family glowing brighter on dark — violet actions, green strings, yellow highlights, cyan numbers.
 
 ### Lesbian
 
 **Meaning:** An inward color language — the warmth and closeness of love between women.
 
-Think **dusk on a shared balcony**, **terracotta walls** catching the last light, **dusty rose** in shadow, **magenta** as pulse rather than symbol. The palette runs warm peach shell (~h 25°) through **sunset orange** intervals, **blush pink** quote glow, and **deep rose-magenta** for keywords and cursor — like intimacy that is tender but not fragile. Dark Lesbian keeps that glow on charcoal: embers, not neon. Compared with LGBTQ’s outward spectrum, Lesbian stays in one emotional register — close, bodily, quiet confidence.
+**Light Lesbian** — **Dusk on a shared balcony**: warm peach shell (~h 25°), **sunset orange** intervals, **blush pink** quote glow, **deep rose-magenta** keywords and cursor — intimate, tender, not fragile.
+
+**Dark Lesbian** — **Warm ember night**: deep burgundy-plum shell, orange and pink glow on shadow — embers, not neon. Same emotional register as the light theme: close, bodily, quiet confidence. (Compared with LGBTQ’s outward spectrum, Lesbian stays in one warm band.)
 
 ### MS-DOS
 
@@ -67,24 +77,27 @@ Saturated **IBM blue** background (~h 240°), **white** foreground, **yellow** s
 
 ### Country themes
 
-**Meaning:** Each palette draws on **classic cultural color expression** — landscape, craft, ritual, and everyday beauty — not national flags. Ukraine’s sky-and-wheat pairing is the clearest example; the others follow the same spirit.
+**Meaning:** Each palette draws on **classic cultural color expression** — landscape, craft, ritual, and everyday beauty — not national flags. Every country has **Light** and **Dark** variants as independent palettes.
 
-| Theme | Cultural color story | Base |
-|-------|----------------------|------|
-| **China** | **Ink-wash landscape (水墨山水):** Xuan paper white, ink black and ink-wash gray, distant **mountain blue-green (花青)**, occasional **cinnabar seal red (朱砂)** — mist, restraint, depth. | Light |
-| **Russia** | **Icons and winter:** gilt onion-dome gold, deep liturgical red, **birch-bark white**, twilight **slate blue** over snow — solemn, luminous, cold air. | Light |
-| **USA** | **Open country:** **prairie sky** blue, **wheat-field** amber, **barn red**, worn denim — frontier light, not bunting. | Light |
-| **Japan** | **Chrysanthemum and sword (菊与刀):** imperial **crimson**, **washi** white, **sumi** black, austere gray — bushido clarity: beauty held taut by discipline. | Light |
-| **Ukraine** | **Sky and wheat (небо й пшениця):** open **azure** and ripe **gold** — the horizon where field meets summer sky; hopeful, earthy, wide. | Light |
-| **Canada** | **North woods:** **maple autumn** crimson, **snow** white, **lake and pine** blue-green — forest silence, long winters, brief fire of fall. | Light |
-| **Norway** | **Fjord night:** deep **sea navy**, **aurora** teal highlights, **pine** shadow, **midnight sun** amber on water — Nordic dark, sparse, bright edges. | Dark |
-| **UK** | **Rain and reading rooms:** **fog gray**, **slate**, **library leather**, muted **rose** — damp stone, tea-hour quiet, inherited craft. | Light |
-| **German** | **Forest and workshop:** **Black Forest** green-black, **oak** amber, **Rhine mist** gray, **Bauhaus** clear red accent — craft, gravity, function. | Dark |
-| **Italy** | **Mediterranean stone:** **terracotta**, **olive**, **marble** warm white, **coastal azure** — sun on old walls, Renaissance earth tones. | Light |
-| **India** | **Temple and market:** **turmeric** gold, **henna** rust, **indigo** night, **marigold** saffron — spice, ritual dye, monsoon sky between showers. | Light |
-| **Brasil** | **Tropics:** **rainforest** green canopy, **beach** gold, **Atlantic** deep blue, carnival heat in accent reds — lush, sun, rhythm. | Light |
+| Theme | Light | Dark |
+|-------|-------|------|
+| **Brasil** | **Tropics:** **rainforest** green, **beach** gold, **Atlantic** blue on a pale shell — lush daylight. | **Canopy night:** deep green-black shadow, **carnival** red accents, gold and Atlantic blue as bright edges. |
+| **Canada** | **North woods:** **snow** white, **maple autumn** crimson, **lake and pine** blue-green. | **Forest night:** pine shadow shell, maple ember, lake blue — long winter dark with brief warm accents. |
+| **China** | **Ink-wash (水墨山水):** **xuan** paper, **sumi** gray, distant **mountain blue-green (花青)**, **cinnabar (朱砂)** seal accents. | **Night landscape:** deep ink blue-black, pale paper-toned text, **cinnabar** lantern accents, **indigo** mist. |
+| **German** | **Rhine workshop:** **mist** gray, **oak** amber, forest **green** accents — craft in daylight. | **Black Forest:** green-black shadow, **oak** warmth, **Bauhaus** red accent — gravity and function. |
+| **India** | **Temple and market:** **turmeric** gold, **henna** rust, **marigold** saffron on cream — spice and ritual dye in sun. | **Monsoon night:** deep **indigo** shell, **turmeric** and **marigold** glow, henna depth between showers. |
+| **Italy** | **Mediterranean stone:** **terracotta**, **olive**, **marble** warm white, **coastal azure**. | **Coastal dusk:** terracotta shadow, olive depth, azure highlights on warm stone dark. |
+| **Japan** | **Paper and dye:** warm **washi**, **sumi** gray, **ai** indigo, **beni** shrine accent, **moss**, pale **sakura** wash. | **Lacquer evening:** **urushi** dark shell, lantern **beni**, **moss** garden green, **ai** shadow — materials and season, not a single emblem. |
+| **Norway** | **Fjord and birch:** ice-bright shell, pale **sea** blue, **pine** shadow, brief **midnight-sun** gold. | **Fjord night:** deep **sea navy**, **aurora** teal, sparse bright edges on Nordic dark. |
+| **Russia** | **Icons and winter:** gilt gold, liturgical red, **birch** white, **slate blue** over snow. | **Winter twilight:** deep slate shell, gilt and red as luminous accents, birch-pale text, cold air. |
+| **Taiwan** | **Island mist:** **mountain fog** gray-blue, **tea-hill** green, **temple-pillar** red, **Pacific teal**. | **Highland night:** misty blue-gray dark, tea-green shadow, temple red and coast teal as edges. |
+| **Thai** | **Temple and river:** warm **stucco** cream, **saffron** robe, **lotus** pink, **jade** shade, **gold leaf** accent. | **Temple night:** lacquer dark, **saffron** glow, lotus pink, gold on shadow — ordination gold without gilding the whole shell. |
+| **UK** | **Rain and reading rooms:** **fog gray**, **slate**, **library leather**, muted **rose**. | **Rainy evening:** slate depth, leather-brown warmth, rose in lamplight — tea-hour quiet. |
+| **Ukraine** | **Sky and wheat (небо й пшениця):** open **azure** and ripe **gold** — field meets summer sky. | **Evening field:** indigo sky dark, **wheat** shimmer and **azure** accents — hopeful, earthy depth. |
+| **USA** | **Open country:** **prairie sky** blue, **wheat-field** amber, **barn red**, worn **denim**. | **Prairie dusk:** denim-navy shell, **barn red** ember, amber horizon — frontier dark, not bunting. |
+| **Viet** | **Delta and village:** **rice-paper** cream, **lacquer** red, **bamboo** green, **river** blue-gray. | **Lantern dusk:** delta indigo dark, **lacquer** red, bamboo green, warm lantern gold on water. |
 
-Primary hues tint the shell; secondary and accent colors carry strings, cursor, selection, and git marks. Light themes use pale washed backgrounds; Norway and German use deep cultural shadows with brighter accents.
+Primary hues tint the shell; secondary and accent colors carry strings, cursor, selection, and git marks.
 
 ## Install
 

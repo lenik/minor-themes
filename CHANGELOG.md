@@ -2,6 +2,25 @@
 
 All notable changes to this extension are documented in this file.
 
+## [1.0.6] — 2026-07-01
+
+### Added
+
+- Country themes **Thai**, **Viet**, and **Taiwan** — each with hand-crafted light and dark palettes in `scripts/country-palettes.mjs`, plus syntax token palettes.
+- Dark country variants for all fifteen regions (`dark-country-{slug}`), registered alongside existing light `country-{slug}` entries — **43 themes** total.
+- Shared `scripts/color-utils.mjs` and one-shot HSL refactor scripts for palette maintenance.
+- Hand-crafted syntax token palettes (`scripts/token-palettes.mjs`, `scripts/country-token-palettes.mjs`) with ~32 scoped categories per theme.
+
+### Changed
+
+- Theme generation refactor: workbench palettes use `hsl()` strings; git decoration colors are defined inline per palette instead of via `withGit()` / `countryGit()`.
+- Light and dark shells are fully independent palettes — `darkVariant()` derivation removed for Maiden, Girl, Morandi, LGBTQ, Lesbian, and all country themes.
+- Country workbench colors are hand-designed in `scripts/country-palettes.mjs` (no `countryPalette()` algorithm).
+- **Japan** workbench and token palettes redesigned around paper (**washi**), ink (**sumi**), indigo dye (**ai**), vermillion accent (**beni**), moss, and seasonal restraint.
+- **Norway** and **German**: `country-norway` / `country-german` are now light; former dark shells are `dark-country-norway` / `dark-country-german`.
+- Generated `themes/*.json` files are no longer tracked in git; `vscode:prepublish` runs `pnpm run generate`.
+- README theme guides (English and Chinese): country table lists all fifteen regions alphabetically with Light/Dark columns; paired theme sections describe both variants.
+
 ## [1.0.5] — 2026-06-30
 
 ### Added
