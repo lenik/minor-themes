@@ -77,6 +77,22 @@ Saturated **IBM blue** background (~h 240°), **white** foreground, **yellow** s
 
 **Neon green** (~h 135°) on **near-black** green-tinted panels. Glassy depth via subtle grid and border greens; cursor and active elements glow. Strings and functions pick up the bright green; keywords stay in a mid green. Cyberpunk terminal — best in a dim room.
 
+### X-Files
+
+**Meaning:** ***The X-Files*** (1993–) — FBI basement files, fluorescent bureaucracy, and night woods.
+
+**Light X-Files** — **J. Edgar Hoover Building**: **manila folder** cream shell, **institutional gray-green** text, **FBI forest green** cursor, **amber highlighter** quotes and git marks. Fluorescent office paper — case files under strip lighting.
+
+**Dark X-Files** — **Basement and pine woods**: **forest night** green-black shell, **CRT phosphor** pale text, **alien green** cursor, **flashlight amber** glow, **classified red** accents. The truth is out there — in the dark.
+
+### Only Yesterday
+
+**Meaning:** ***Only Yesterday*** (*Omohide Poro Poro*, 1991) — Studio Ghibli memory of rural Yamagata: safflower fields, rice harvest gold, soft countryside green.
+
+**Light Only Yesterday** — **Summer memory in sun**: **sun-washed cream** shell, warm brown text, **safflower red** accents, **meadow teal-green** intervals, **rice-field gold** highlights. Nostalgic, gentle, sun-faded — Taeko’s flashbacks in daylight.
+
+**Dark Only Yesterday** — **Tatami at dusk**: **umber memory** shadow, **faded cream** text, **safflower lantern** red, **golden recall** and **evening meadow** green. Memory deepening after sunset — warm, not cold.
+
 ### Country themes
 
 **Meaning:** Each palette draws on **classic cultural color expression** — landscape, craft, ritual, and everyday beauty — not national flags. Every country has **Light** and **Dark** variants as independent palettes.
