@@ -3,7 +3,7 @@
   "displayName": "Minor Themes",
   "description": "VS Code color themes: Innocent, Maiden, Girl, Morandi, LGBTQ, country flags, MS-DOS, and Matrix II.",
   "icon": "assets/icon.png",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "publisher": "Lenik",
   "license": "GPL",
   "repository": {
@@ -89,9 +89,19 @@
         "path": "./themes/country-china-color-theme.json"
       },
       {
+        "label": "Country: China (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-country-china-color-theme.json"
+      },
+      {
         "label": "Country: Russia",
         "uiTheme": "vs",
         "path": "./themes/country-russia-color-theme.json"
+      },
+      {
+        "label": "Country: Russia (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-country-russia-color-theme.json"
       },
       {
         "label": "Country: USA",
@@ -99,9 +109,19 @@
         "path": "./themes/country-usa-color-theme.json"
       },
       {
+        "label": "Country: USA (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-country-usa-color-theme.json"
+      },
+      {
         "label": "Country: Japan",
         "uiTheme": "vs",
         "path": "./themes/country-japan-color-theme.json"
+      },
+      {
+        "label": "Country: Japan (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-country-japan-color-theme.json"
       },
       {
         "label": "Country: Ukraine",
@@ -109,14 +129,29 @@
         "path": "./themes/country-ukraine-color-theme.json"
       },
       {
+        "label": "Country: Ukraine (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-country-ukraine-color-theme.json"
+      },
+      {
         "label": "Country: Canada",
         "uiTheme": "vs",
         "path": "./themes/country-canada-color-theme.json"
       },
       {
-        "label": "Country: Norway",
+        "label": "Country: Canada (Dark)",
         "uiTheme": "vs-dark",
+        "path": "./themes/dark-country-canada-color-theme.json"
+      },
+      {
+        "label": "Country: Norway",
+        "uiTheme": "vs",
         "path": "./themes/country-norway-color-theme.json"
+      },
+      {
+        "label": "Country: Norway (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-country-norway-color-theme.json"
       },
       {
         "label": "Country: UK",
@@ -124,9 +159,19 @@
         "path": "./themes/country-uk-color-theme.json"
       },
       {
-        "label": "Country: German",
+        "label": "Country: UK (Dark)",
         "uiTheme": "vs-dark",
+        "path": "./themes/dark-country-uk-color-theme.json"
+      },
+      {
+        "label": "Country: German",
+        "uiTheme": "vs",
         "path": "./themes/country-german-color-theme.json"
+      },
+      {
+        "label": "Country: German (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-country-german-color-theme.json"
       },
       {
         "label": "Country: Italy",
@@ -134,19 +179,66 @@
         "path": "./themes/country-italy-color-theme.json"
       },
       {
+        "label": "Country: Italy (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-country-italy-color-theme.json"
+      },
+      {
         "label": "Country: India",
         "uiTheme": "vs",
         "path": "./themes/country-india-color-theme.json"
       },
       {
+        "label": "Country: India (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-country-india-color-theme.json"
+      },
+      {
         "label": "Country: Brasil",
         "uiTheme": "vs",
         "path": "./themes/country-brasil-color-theme.json"
+      },
+      {
+        "label": "Country: Brasil (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-country-brasil-color-theme.json"
+      },
+      {
+        "label": "Country: Thai",
+        "uiTheme": "vs",
+        "path": "./themes/country-thai-color-theme.json"
+      },
+      {
+        "label": "Country: Thai (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-country-thai-color-theme.json"
+      },
+      {
+        "label": "Country: Viet",
+        "uiTheme": "vs",
+        "path": "./themes/country-viet-color-theme.json"
+      },
+      {
+        "label": "Country: Viet (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-country-viet-color-theme.json"
+      },
+      {
+        "label": "Country: Taiwan",
+        "uiTheme": "vs",
+        "path": "./themes/country-taiwan-color-theme.json"
+      },
+      {
+        "label": "Country: Taiwan (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-country-taiwan-color-theme.json"
       }
     ]
   },
   "scripts": {
     "generate": "node scripts/generate-themes.mjs",
+    "refactor-rgb2hsl": "node scripts/refactor-rgb2hsl.mjs",
+    "refactor-palette-hsl": "node scripts/refactor-palette-hsl.mjs",
     "vscode:prepublish": "pnpm run generate",
     "package": "vsce package --no-dependencies"
   },
