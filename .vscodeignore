@@ -8,3 +8,8 @@ pnpm-workspace.yaml
 *.gz
 .gitignore
 .gitignore.tmpcheck
+assets/back*
+assets/front*
+assets/lay*
+assets/image.jpg
+assets/image-512a.png
