@@ -2,6 +2,41 @@
 
 All notable changes to this extension are documented in this file.
 
+## [1.0.9] — 2026-09-10
+
+### Added
+
+- Synced full palette set from worldman SOP `themes/` (UI + syntax tokens): **112** registered themes.
+- Minor: **Lady**, **Gal**, **Tomboy**, **Gym Bro**, **Femboy**, **Moe Girl** (light/dark).
+- Vibe: **Liaozhai**, **Game of Thrones**, plus **Aroma**.
+- Country: expanded from 15 to **39** regions (France, Korea, Arab, Bengal, Hebrew, Swahili, …), each light/dark.
+- `pnpm run sync` → `scripts/sync-from-worldman.mjs` to re-pull palettes from the SOP path.
+
+### Changed
+
+- Workbench palettes live in `scripts/minor-ui-palettes.mjs`, `vibe-ui-palettes.mjs`, and `country-palettes.mjs` (no longer inlined in `generate-themes.mjs`).
+- Theme registry driven by `scripts/theme-catalog.mjs` (from worldman `catalog.tsv`).
+- README theme guides (English and Chinese) regenerated from SOP catalog prose.
+- Contrast-tuned foregrounds from worldman (e.g. near-black / near-white body text where SOP updated them).
+
+### Removed
+
+- **Light Girl** / **Dark Girl** — dropped upstream; use **Gal** / **Moe Girl** / **Lady** instead.
+
+## [1.0.8] — 2026-09-10
+
+### Added
+
+- **Light Aroma** and **Dark Aroma** — warm cream / terracotta clay botanical vibe (Ibvjahst Botanica), with caramel glow and sage intervals; evening diffuser dark pair.
+- Hand-crafted syntax token palettes for both Aroma theme JSON files.
+
+### Changed
+
+- README theme guides (English and Chinese): new Aroma section under vibe themes.
+- Extension manifest registers **50 themes** (version **1.0.8**).
+
+All notable changes to this extension are documented in this file.
+
 ## [1.0.7] — 2026-07-01
 
 ### Added
