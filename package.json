@@ -585,10 +585,12 @@
     "refactor-rgb2hsl": "node scripts/refactor-rgb2hsl.mjs",
     "refactor-palette-hsl": "node scripts/refactor-palette-hsl.mjs",
     "vscode:prepublish": "pnpm run generate",
+    "build": "vsce package --no-dependencies",
     "package": "vsce package --no-dependencies",
     "sync": "node scripts/sync-from-worldman.mjs"
   },
   "devDependencies": {
-    "@vscode/vsce": "^3.8.0"
+    "@vscode/vsce": "^3.8.0",
+    "ovsx": "^0.10.12"
   }
 }

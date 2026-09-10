@@ -4,4 +4,7 @@ scripts/**
 pnpm-lock.yaml
 pnpm-workspace.yaml
 *.vsix
+*.tar.gz
+*.gz
 .gitignore
+.gitignore.tmpcheck
