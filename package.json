@@ -3,7 +3,7 @@
   "displayName": "Minor Themes",
   "description": "VS Code color themes in three groups: Minor (persona), Vibe (atmosphere), and Country (cultural palettes).",
   "icon": "assets/image-512.png",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "publisher": "Lenik",
   "license": "GPL",
   "repository": {

@@ -2,6 +2,22 @@
 
 All notable changes to this extension are documented in this file.
 
+## [1.0.10] — 2026-09-10
+
+### Added
+
+- Extension icon refreshed (`assets/image-512.png`).
+
+### Changed
+
+- Reorganized themes into **Minor / Vibe / Country** groups end-to-end:
+  - Generated JSON under `themes/{minor,vibe,country}/`
+  - Token palettes split into `*-token-palettes.mjs` per group
+  - Manifest and `theme-catalog.mjs` ordered minor → vibe → country
+- README (EN/ZH) documents the three-group layout.
+
+All notable changes to this extension are documented in this file.
+
 ## [1.0.9] — 2026-09-10
 
 ### Added
