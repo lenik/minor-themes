@@ -1,9 +1,9 @@
 {
   "name": "minor-themes",
   "displayName": "Minor Themes",
-  "description": "VS Code color themes: Innocent, Maiden, Girl, Morandi, LGBTQ, country flags, MS-DOS, and Matrix II.",
+  "description": "VS Code color themes: Innocent, Maiden, Gal, Morandi, LGBTQ, Aroma, country palettes, MS-DOS, Matrix II, and more.",
   "icon": "assets/icon.png",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "publisher": "Lenik",
   "license": "GPL",
   "repository": {
@@ -59,26 +59,6 @@
         "path": "./themes/dark-lesbian-color-theme.json"
       },
       {
-        "label": "Light Girl",
-        "uiTheme": "vs",
-        "path": "./themes/light-girl-color-theme.json"
-      },
-      {
-        "label": "Dark Girl",
-        "uiTheme": "vs-dark",
-        "path": "./themes/dark-girl-color-theme.json"
-      },
-      {
-        "label": "Light Morandi",
-        "uiTheme": "vs",
-        "path": "./themes/light-morandi-color-theme.json"
-      },
-      {
-        "label": "Dark Morandi",
-        "uiTheme": "vs-dark",
-        "path": "./themes/dark-morandi-color-theme.json"
-      },
-      {
         "label": "MS-DOS",
         "uiTheme": "vs-dark",
         "path": "./themes/ms-dos-color-theme.json"
@@ -107,6 +87,106 @@
         "label": "Dark Only Yesterday",
         "uiTheme": "vs-dark",
         "path": "./themes/dark-only-yesterday-color-theme.json"
+      },
+      {
+        "label": "Light Morandi",
+        "uiTheme": "vs",
+        "path": "./themes/light-morandi-color-theme.json"
+      },
+      {
+        "label": "Dark Morandi",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-morandi-color-theme.json"
+      },
+      {
+        "label": "Light Aroma",
+        "uiTheme": "vs",
+        "path": "./themes/light-aroma-color-theme.json"
+      },
+      {
+        "label": "Dark Aroma",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-aroma-color-theme.json"
+      },
+      {
+        "label": "Light Lady",
+        "uiTheme": "vs",
+        "path": "./themes/light-lady-color-theme.json"
+      },
+      {
+        "label": "Dark Lady",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-lady-color-theme.json"
+      },
+      {
+        "label": "Light Gal",
+        "uiTheme": "vs",
+        "path": "./themes/light-gal-color-theme.json"
+      },
+      {
+        "label": "Dark Gal",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-gal-color-theme.json"
+      },
+      {
+        "label": "Light Tomboy",
+        "uiTheme": "vs",
+        "path": "./themes/light-tomboy-color-theme.json"
+      },
+      {
+        "label": "Dark Tomboy",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-tomboy-color-theme.json"
+      },
+      {
+        "label": "Light Gym Bro",
+        "uiTheme": "vs",
+        "path": "./themes/light-gym-bro-color-theme.json"
+      },
+      {
+        "label": "Dark Gym Bro",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-gym-bro-color-theme.json"
+      },
+      {
+        "label": "Light Femboy",
+        "uiTheme": "vs",
+        "path": "./themes/light-femboy-color-theme.json"
+      },
+      {
+        "label": "Dark Femboy",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-femboy-color-theme.json"
+      },
+      {
+        "label": "Light Moe Girl",
+        "uiTheme": "vs",
+        "path": "./themes/light-moe-girl-color-theme.json"
+      },
+      {
+        "label": "Dark Moe Girl",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-moe-girl-color-theme.json"
+      },
+      {
+        "label": "Light Liaozhai",
+        "uiTheme": "vs",
+        "path": "./themes/light-liaozhai-color-theme.json"
+      },
+      {
+        "label": "Dark Liaozhai",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-liaozhai-color-theme.json"
+      },
+      {
+        "label": "Light Game of Thrones",
+        "uiTheme": "vs",
+        "path": "./themes/light-thrones-color-theme.json"
+      },
+      {
+        "label": "Dark Game of Thrones",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-thrones-color-theme.json"
       },
       {
         "label": "Country: Brasil",
@@ -257,6 +337,246 @@
         "label": "Country: Viet (Dark)",
         "uiTheme": "vs-dark",
         "path": "./themes/dark-country-viet-color-theme.json"
+      },
+      {
+        "label": "Country: France",
+        "uiTheme": "vs",
+        "path": "./themes/country-france-color-theme.json"
+      },
+      {
+        "label": "Country: France (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-country-france-color-theme.json"
+      },
+      {
+        "label": "Country: Mexico",
+        "uiTheme": "vs",
+        "path": "./themes/country-mexico-color-theme.json"
+      },
+      {
+        "label": "Country: Mexico (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-country-mexico-color-theme.json"
+      },
+      {
+        "label": "Country: Korea",
+        "uiTheme": "vs",
+        "path": "./themes/country-korea-color-theme.json"
+      },
+      {
+        "label": "Country: Korea (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-country-korea-color-theme.json"
+      },
+      {
+        "label": "Country: Arab",
+        "uiTheme": "vs",
+        "path": "./themes/country-arab-color-theme.json"
+      },
+      {
+        "label": "Country: Arab (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-country-arab-color-theme.json"
+      },
+      {
+        "label": "Country: Indonesia",
+        "uiTheme": "vs",
+        "path": "./themes/country-indonesia-color-theme.json"
+      },
+      {
+        "label": "Country: Indonesia (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-country-indonesia-color-theme.json"
+      },
+      {
+        "label": "Country: Netherlands",
+        "uiTheme": "vs",
+        "path": "./themes/country-netherlands-color-theme.json"
+      },
+      {
+        "label": "Country: Netherlands (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-country-netherlands-color-theme.json"
+      },
+      {
+        "label": "Country: Poland",
+        "uiTheme": "vs",
+        "path": "./themes/country-poland-color-theme.json"
+      },
+      {
+        "label": "Country: Poland (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-country-poland-color-theme.json"
+      },
+      {
+        "label": "Country: Turkey",
+        "uiTheme": "vs",
+        "path": "./themes/country-turkey-color-theme.json"
+      },
+      {
+        "label": "Country: Turkey (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-country-turkey-color-theme.json"
+      },
+      {
+        "label": "Country: Sweden",
+        "uiTheme": "vs",
+        "path": "./themes/country-sweden-color-theme.json"
+      },
+      {
+        "label": "Country: Sweden (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-country-sweden-color-theme.json"
+      },
+      {
+        "label": "Country: Denmark",
+        "uiTheme": "vs",
+        "path": "./themes/country-denmark-color-theme.json"
+      },
+      {
+        "label": "Country: Denmark (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-country-denmark-color-theme.json"
+      },
+      {
+        "label": "Country: Finland",
+        "uiTheme": "vs",
+        "path": "./themes/country-finland-color-theme.json"
+      },
+      {
+        "label": "Country: Finland (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-country-finland-color-theme.json"
+      },
+      {
+        "label": "Country: Czech",
+        "uiTheme": "vs",
+        "path": "./themes/country-czech-color-theme.json"
+      },
+      {
+        "label": "Country: Czech (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-country-czech-color-theme.json"
+      },
+      {
+        "label": "Country: Romania",
+        "uiTheme": "vs",
+        "path": "./themes/country-romania-color-theme.json"
+      },
+      {
+        "label": "Country: Romania (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-country-romania-color-theme.json"
+      },
+      {
+        "label": "Country: Greece",
+        "uiTheme": "vs",
+        "path": "./themes/country-greece-color-theme.json"
+      },
+      {
+        "label": "Country: Greece (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-country-greece-color-theme.json"
+      },
+      {
+        "label": "Country: Hungary",
+        "uiTheme": "vs",
+        "path": "./themes/country-hungary-color-theme.json"
+      },
+      {
+        "label": "Country: Hungary (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-country-hungary-color-theme.json"
+      },
+      {
+        "label": "Country: Bulgaria",
+        "uiTheme": "vs",
+        "path": "./themes/country-bulgaria-color-theme.json"
+      },
+      {
+        "label": "Country: Bulgaria (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-country-bulgaria-color-theme.json"
+      },
+      {
+        "label": "Country: Kazakhstan",
+        "uiTheme": "vs",
+        "path": "./themes/country-kazakhstan-color-theme.json"
+      },
+      {
+        "label": "Country: Kazakhstan (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-country-kazakhstan-color-theme.json"
+      },
+      {
+        "label": "Country: Philippines",
+        "uiTheme": "vs",
+        "path": "./themes/country-philippines-color-theme.json"
+      },
+      {
+        "label": "Country: Philippines (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-country-philippines-color-theme.json"
+      },
+      {
+        "label": "Country: Bengal",
+        "uiTheme": "vs",
+        "path": "./themes/country-bengal-color-theme.json"
+      },
+      {
+        "label": "Country: Bengal (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-country-bengal-color-theme.json"
+      },
+      {
+        "label": "Country: Marathi",
+        "uiTheme": "vs",
+        "path": "./themes/country-marathi-color-theme.json"
+      },
+      {
+        "label": "Country: Marathi (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-country-marathi-color-theme.json"
+      },
+      {
+        "label": "Country: Tamil",
+        "uiTheme": "vs",
+        "path": "./themes/country-tamil-color-theme.json"
+      },
+      {
+        "label": "Country: Tamil (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-country-tamil-color-theme.json"
+      },
+      {
+        "label": "Country: Telugu",
+        "uiTheme": "vs",
+        "path": "./themes/country-telugu-color-theme.json"
+      },
+      {
+        "label": "Country: Telugu (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-country-telugu-color-theme.json"
+      },
+      {
+        "label": "Country: Hebrew",
+        "uiTheme": "vs",
+        "path": "./themes/country-hebrew-color-theme.json"
+      },
+      {
+        "label": "Country: Hebrew (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-country-hebrew-color-theme.json"
+      },
+      {
+        "label": "Country: Swahili",
+        "uiTheme": "vs",
+        "path": "./themes/country-swahili-color-theme.json"
+      },
+      {
+        "label": "Country: Swahili (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-country-swahili-color-theme.json"
       }
     ]
   },
@@ -265,7 +585,8 @@
     "refactor-rgb2hsl": "node scripts/refactor-rgb2hsl.mjs",
     "refactor-palette-hsl": "node scripts/refactor-palette-hsl.mjs",
     "vscode:prepublish": "pnpm run generate",
-    "package": "vsce package --no-dependencies"
+    "package": "vsce package --no-dependencies",
+    "sync": "node scripts/sync-from-worldman.mjs"
   },
   "devDependencies": {
     "@vscode/vsce": "^3.8.0"
