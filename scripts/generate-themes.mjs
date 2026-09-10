@@ -5,14 +5,14 @@
  * Sync source: pnpm run sync  (worldman SOP themes)
  */
 
-import { writeFileSync, mkdirSync } from "node:fs";
-import { dirname, join } from "node:path";
+import { writeFileSync, mkdirSync, rmSync, readdirSync } from "node:fs";
+import { dirname, join, basename } from "node:path";
 import { fileURLToPath } from "node:url";
 import { buildTokenColorRules, tokenPalettes } from "./token-palettes.mjs";
 import { countryPalettes } from "./country-palettes.mjs";
 import { uiPalettes as minorUi } from "./minor-ui-palettes.mjs";
 import { uiPalettes as vibeUi } from "./vibe-ui-palettes.mjs";
-import { themeCatalog } from "./theme-catalog.mjs";
+import { themeCatalog, themeGroups } from "./theme-catalog.mjs";
 import {
   ensureContrast,
   hslToHex,
@@ -182,33 +182,56 @@ function workbenchColors(c, isDark) {
 
 /** @param {string} fileName @param {Record<string, string>} c @param {boolean} isDark */
 function tokenColorsFor(fileName, c, isDark) {
-  const palette = tokenPalettes[fileName];
+  const key = basename(fileName);
+  const palette = tokenPalettes[key];
   if (!palette) {
-    throw new Error(`Missing tokenPalettes for ${fileName}`);
+    throw new Error(`Missing tokenPalettes for ${key} (${fileName})`);
   }
   return buildTokenColorRules(palette, c.quoteBg, isDark);
 }
 
-/** @param {string} label @param {Palette} palette @param {boolean} isDark @param {string} fileName */
-function buildTheme(label, palette, isDark, fileName) {
+/** @param {string} label @param {Palette} palette @param {boolean} isDark @param {string} relPath */
+function buildTheme(label, palette, isDark, relPath) {
   const c = hex(palette);
   const theme = {
     name: label,
     type: isDark ? "dark" : "light",
     colors: workbenchColors(c, isDark),
-    tokenColors: tokenColorsFor(fileName, c, isDark),
+    tokenColors: tokenColorsFor(relPath, c, isDark),
   };
-  writeFileSync(join(themesDir, fileName), JSON.stringify(theme, null, 2) + "\n");
+  const outPath = join(themesDir, relPath);
+  mkdirSync(dirname(outPath), { recursive: true });
+  writeFileSync(outPath, JSON.stringify(theme, null, 2) + "\n");
 }
 
 mkdirSync(themesDir, { recursive: true });
+
+// Remove legacy flat theme JSON left over from pre-group layout.
+for (const name of readdirSync(themesDir)) {
+  if (name.endsWith("-color-theme.json")) {
+    rmSync(join(themesDir, name));
+  }
+}
+for (const group of themeGroups) {
+  mkdirSync(join(themesDir, group), { recursive: true });
+}
 
 for (const entry of themeCatalog) {
   const raw = palettes[entry.paletteKey];
   if (!raw) {
     throw new Error(`Missing UI palette for ${entry.paletteKey} (${entry.file})`);
   }
+  if (!themeGroups.includes(entry.group)) {
+    throw new Error(`Unknown theme group: ${entry.group}`);
+  }
   buildTheme(entry.label, themePalette(raw), entry.type === "dark", entry.file);
 }
 
-console.log(`Wrote ${themeCatalog.length} themes to ${themesDir}`);
+const counts = Object.fromEntries(
+  themeGroups.map((g) => [g, themeCatalog.filter((t) => t.group === g).length]),
+);
+console.log(
+  `Wrote ${themeCatalog.length} themes to ${themesDir}/ (${themeGroups
+    .map((g) => `${g}=${counts[g]}`)
+    .join(", ")})`,
+);

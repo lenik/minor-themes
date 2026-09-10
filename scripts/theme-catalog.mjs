@@ -1,5 +1,6 @@
 /**
  * Theme registry synced from worldman SOP catalog.tsv.
+ * Ordered by group: minor → vibe → country.
  */
 export const themeCatalog = [
   {
@@ -9,7 +10,7 @@ export const themeCatalog = [
     "group": "minor",
     "family": "Innocent",
     "paletteKey": "innocent",
-    "file": "innocent-color-theme.json",
+    "file": "minor/innocent-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -19,7 +20,7 @@ export const themeCatalog = [
     "group": "minor",
     "family": "Innocent",
     "paletteKey": "darkInnocent",
-    "file": "dark-innocent-color-theme.json",
+    "file": "minor/dark-innocent-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -29,7 +30,7 @@ export const themeCatalog = [
     "group": "minor",
     "family": "Maiden",
     "paletteKey": "maiden",
-    "file": "light-maiden-color-theme.json",
+    "file": "minor/light-maiden-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -39,7 +40,7 @@ export const themeCatalog = [
     "group": "minor",
     "family": "Maiden",
     "paletteKey": "darkMaiden",
-    "file": "dark-maiden-color-theme.json",
+    "file": "minor/dark-maiden-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -49,7 +50,7 @@ export const themeCatalog = [
     "group": "minor",
     "family": "LGBTQ",
     "paletteKey": "lgbtq",
-    "file": "light-lgbtq-color-theme.json",
+    "file": "minor/light-lgbtq-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -59,7 +60,7 @@ export const themeCatalog = [
     "group": "minor",
     "family": "LGBTQ",
     "paletteKey": "darkLgbtq",
-    "file": "dark-lgbtq-color-theme.json",
+    "file": "minor/dark-lgbtq-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -69,7 +70,7 @@ export const themeCatalog = [
     "group": "minor",
     "family": "Lesbian",
     "paletteKey": "lesbian",
-    "file": "light-lesbian-color-theme.json",
+    "file": "minor/light-lesbian-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -79,107 +80,7 @@ export const themeCatalog = [
     "group": "minor",
     "family": "Lesbian",
     "paletteKey": "darkLesbian",
-    "file": "dark-lesbian-color-theme.json",
-    "uiTheme": "vs-dark"
-  },
-  {
-    "id": "ms-dos",
-    "label": "MS-DOS",
-    "type": "dark",
-    "group": "vibe",
-    "family": "MS-DOS",
-    "paletteKey": "msdos",
-    "file": "ms-dos-color-theme.json",
-    "uiTheme": "vs-dark"
-  },
-  {
-    "id": "matrix-ii",
-    "label": "Matrix II",
-    "type": "dark",
-    "group": "vibe",
-    "family": "Matrix-II",
-    "paletteKey": "matrix2",
-    "file": "matrix-ii-color-theme.json",
-    "uiTheme": "vs-dark"
-  },
-  {
-    "id": "light-x-files",
-    "label": "Light X-Files",
-    "type": "light",
-    "group": "vibe",
-    "family": "X-Files",
-    "paletteKey": "xfiles",
-    "file": "light-x-files-color-theme.json",
-    "uiTheme": "vs"
-  },
-  {
-    "id": "dark-x-files",
-    "label": "Dark X-Files",
-    "type": "dark",
-    "group": "vibe",
-    "family": "X-Files",
-    "paletteKey": "darkXfiles",
-    "file": "dark-x-files-color-theme.json",
-    "uiTheme": "vs-dark"
-  },
-  {
-    "id": "light-only-yesterday",
-    "label": "Light Only Yesterday",
-    "type": "light",
-    "group": "vibe",
-    "family": "Yesterday",
-    "paletteKey": "onlyYesterday",
-    "file": "light-only-yesterday-color-theme.json",
-    "uiTheme": "vs"
-  },
-  {
-    "id": "dark-only-yesterday",
-    "label": "Dark Only Yesterday",
-    "type": "dark",
-    "group": "vibe",
-    "family": "Yesterday",
-    "paletteKey": "darkOnlyYesterday",
-    "file": "dark-only-yesterday-color-theme.json",
-    "uiTheme": "vs-dark"
-  },
-  {
-    "id": "light-morandi",
-    "label": "Light Morandi",
-    "type": "light",
-    "group": "vibe",
-    "family": "Morandi",
-    "paletteKey": "morandi",
-    "file": "light-morandi-color-theme.json",
-    "uiTheme": "vs"
-  },
-  {
-    "id": "dark-morandi",
-    "label": "Dark Morandi",
-    "type": "dark",
-    "group": "vibe",
-    "family": "Morandi",
-    "paletteKey": "darkMorandi",
-    "file": "dark-morandi-color-theme.json",
-    "uiTheme": "vs-dark"
-  },
-  {
-    "id": "light-aroma",
-    "label": "Light Aroma",
-    "type": "light",
-    "group": "vibe",
-    "family": "Aroma",
-    "paletteKey": "aroma",
-    "file": "light-aroma-color-theme.json",
-    "uiTheme": "vs"
-  },
-  {
-    "id": "dark-aroma",
-    "label": "Dark Aroma",
-    "type": "dark",
-    "group": "vibe",
-    "family": "Aroma",
-    "paletteKey": "darkAroma",
-    "file": "dark-aroma-color-theme.json",
+    "file": "minor/dark-lesbian-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -189,7 +90,7 @@ export const themeCatalog = [
     "group": "minor",
     "family": "Lady",
     "paletteKey": "lady",
-    "file": "light-lady-color-theme.json",
+    "file": "minor/light-lady-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -199,7 +100,7 @@ export const themeCatalog = [
     "group": "minor",
     "family": "Lady",
     "paletteKey": "darkLady",
-    "file": "dark-lady-color-theme.json",
+    "file": "minor/dark-lady-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -209,7 +110,7 @@ export const themeCatalog = [
     "group": "minor",
     "family": "Gal",
     "paletteKey": "gal",
-    "file": "light-gal-color-theme.json",
+    "file": "minor/light-gal-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -219,7 +120,7 @@ export const themeCatalog = [
     "group": "minor",
     "family": "Gal",
     "paletteKey": "darkGal",
-    "file": "dark-gal-color-theme.json",
+    "file": "minor/dark-gal-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -229,7 +130,7 @@ export const themeCatalog = [
     "group": "minor",
     "family": "Tomboy",
     "paletteKey": "tomboy",
-    "file": "light-tomboy-color-theme.json",
+    "file": "minor/light-tomboy-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -239,7 +140,7 @@ export const themeCatalog = [
     "group": "minor",
     "family": "Tomboy",
     "paletteKey": "darkTomboy",
-    "file": "dark-tomboy-color-theme.json",
+    "file": "minor/dark-tomboy-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -249,7 +150,7 @@ export const themeCatalog = [
     "group": "minor",
     "family": "Gym-Bro",
     "paletteKey": "gymBro",
-    "file": "light-gym-bro-color-theme.json",
+    "file": "minor/light-gym-bro-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -259,7 +160,7 @@ export const themeCatalog = [
     "group": "minor",
     "family": "Gym-Bro",
     "paletteKey": "darkGymBro",
-    "file": "dark-gym-bro-color-theme.json",
+    "file": "minor/dark-gym-bro-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -269,7 +170,7 @@ export const themeCatalog = [
     "group": "minor",
     "family": "Femboy",
     "paletteKey": "femboy",
-    "file": "light-femboy-color-theme.json",
+    "file": "minor/light-femboy-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -279,7 +180,7 @@ export const themeCatalog = [
     "group": "minor",
     "family": "Femboy",
     "paletteKey": "darkFemboy",
-    "file": "dark-femboy-color-theme.json",
+    "file": "minor/dark-femboy-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -289,7 +190,7 @@ export const themeCatalog = [
     "group": "minor",
     "family": "Moe-Girl",
     "paletteKey": "moeGirl",
-    "file": "light-moe-girl-color-theme.json",
+    "file": "minor/light-moe-girl-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -299,7 +200,107 @@ export const themeCatalog = [
     "group": "minor",
     "family": "Moe-Girl",
     "paletteKey": "darkMoeGirl",
-    "file": "dark-moe-girl-color-theme.json",
+    "file": "minor/dark-moe-girl-color-theme.json",
+    "uiTheme": "vs-dark"
+  },
+  {
+    "id": "ms-dos",
+    "label": "MS-DOS",
+    "type": "dark",
+    "group": "vibe",
+    "family": "MS-DOS",
+    "paletteKey": "msdos",
+    "file": "vibe/ms-dos-color-theme.json",
+    "uiTheme": "vs-dark"
+  },
+  {
+    "id": "matrix-ii",
+    "label": "Matrix II",
+    "type": "dark",
+    "group": "vibe",
+    "family": "Matrix-II",
+    "paletteKey": "matrix2",
+    "file": "vibe/matrix-ii-color-theme.json",
+    "uiTheme": "vs-dark"
+  },
+  {
+    "id": "light-x-files",
+    "label": "Light X-Files",
+    "type": "light",
+    "group": "vibe",
+    "family": "X-Files",
+    "paletteKey": "xfiles",
+    "file": "vibe/light-x-files-color-theme.json",
+    "uiTheme": "vs"
+  },
+  {
+    "id": "dark-x-files",
+    "label": "Dark X-Files",
+    "type": "dark",
+    "group": "vibe",
+    "family": "X-Files",
+    "paletteKey": "darkXfiles",
+    "file": "vibe/dark-x-files-color-theme.json",
+    "uiTheme": "vs-dark"
+  },
+  {
+    "id": "light-only-yesterday",
+    "label": "Light Only Yesterday",
+    "type": "light",
+    "group": "vibe",
+    "family": "Yesterday",
+    "paletteKey": "onlyYesterday",
+    "file": "vibe/light-only-yesterday-color-theme.json",
+    "uiTheme": "vs"
+  },
+  {
+    "id": "dark-only-yesterday",
+    "label": "Dark Only Yesterday",
+    "type": "dark",
+    "group": "vibe",
+    "family": "Yesterday",
+    "paletteKey": "darkOnlyYesterday",
+    "file": "vibe/dark-only-yesterday-color-theme.json",
+    "uiTheme": "vs-dark"
+  },
+  {
+    "id": "light-morandi",
+    "label": "Light Morandi",
+    "type": "light",
+    "group": "vibe",
+    "family": "Morandi",
+    "paletteKey": "morandi",
+    "file": "vibe/light-morandi-color-theme.json",
+    "uiTheme": "vs"
+  },
+  {
+    "id": "dark-morandi",
+    "label": "Dark Morandi",
+    "type": "dark",
+    "group": "vibe",
+    "family": "Morandi",
+    "paletteKey": "darkMorandi",
+    "file": "vibe/dark-morandi-color-theme.json",
+    "uiTheme": "vs-dark"
+  },
+  {
+    "id": "light-aroma",
+    "label": "Light Aroma",
+    "type": "light",
+    "group": "vibe",
+    "family": "Aroma",
+    "paletteKey": "aroma",
+    "file": "vibe/light-aroma-color-theme.json",
+    "uiTheme": "vs"
+  },
+  {
+    "id": "dark-aroma",
+    "label": "Dark Aroma",
+    "type": "dark",
+    "group": "vibe",
+    "family": "Aroma",
+    "paletteKey": "darkAroma",
+    "file": "vibe/dark-aroma-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -309,7 +310,7 @@ export const themeCatalog = [
     "group": "vibe",
     "family": "Liaozhai",
     "paletteKey": "liaozhai",
-    "file": "light-liaozhai-color-theme.json",
+    "file": "vibe/light-liaozhai-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -319,7 +320,7 @@ export const themeCatalog = [
     "group": "vibe",
     "family": "Liaozhai",
     "paletteKey": "darkLiaozhai",
-    "file": "dark-liaozhai-color-theme.json",
+    "file": "vibe/dark-liaozhai-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -329,7 +330,7 @@ export const themeCatalog = [
     "group": "vibe",
     "family": "Thrones",
     "paletteKey": "thrones",
-    "file": "light-thrones-color-theme.json",
+    "file": "vibe/light-thrones-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -339,7 +340,7 @@ export const themeCatalog = [
     "group": "vibe",
     "family": "Thrones",
     "paletteKey": "darkThrones",
-    "file": "dark-thrones-color-theme.json",
+    "file": "vibe/dark-thrones-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -349,7 +350,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Brasil",
     "paletteKey": "countryBrasil",
-    "file": "country-brasil-color-theme.json",
+    "file": "country/country-brasil-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -359,7 +360,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Brasil",
     "paletteKey": "darkCountryBrasil",
-    "file": "dark-country-brasil-color-theme.json",
+    "file": "country/dark-country-brasil-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -369,7 +370,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Canada",
     "paletteKey": "countryCanada",
-    "file": "country-canada-color-theme.json",
+    "file": "country/country-canada-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -379,7 +380,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Canada",
     "paletteKey": "darkCountryCanada",
-    "file": "dark-country-canada-color-theme.json",
+    "file": "country/dark-country-canada-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -389,7 +390,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "China",
     "paletteKey": "countryChina",
-    "file": "country-china-color-theme.json",
+    "file": "country/country-china-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -399,7 +400,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "China",
     "paletteKey": "darkCountryChina",
-    "file": "dark-country-china-color-theme.json",
+    "file": "country/dark-country-china-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -409,7 +410,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "German",
     "paletteKey": "countryGerman",
-    "file": "country-german-color-theme.json",
+    "file": "country/country-german-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -419,7 +420,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "German",
     "paletteKey": "darkCountryGerman",
-    "file": "dark-country-german-color-theme.json",
+    "file": "country/dark-country-german-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -429,7 +430,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "India",
     "paletteKey": "countryIndia",
-    "file": "country-india-color-theme.json",
+    "file": "country/country-india-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -439,7 +440,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "India",
     "paletteKey": "darkCountryIndia",
-    "file": "dark-country-india-color-theme.json",
+    "file": "country/dark-country-india-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -449,7 +450,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Italy",
     "paletteKey": "countryItaly",
-    "file": "country-italy-color-theme.json",
+    "file": "country/country-italy-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -459,7 +460,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Italy",
     "paletteKey": "darkCountryItaly",
-    "file": "dark-country-italy-color-theme.json",
+    "file": "country/dark-country-italy-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -469,7 +470,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Japan",
     "paletteKey": "countryJapan",
-    "file": "country-japan-color-theme.json",
+    "file": "country/country-japan-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -479,7 +480,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Japan",
     "paletteKey": "darkCountryJapan",
-    "file": "dark-country-japan-color-theme.json",
+    "file": "country/dark-country-japan-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -489,7 +490,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Norway",
     "paletteKey": "countryNorway",
-    "file": "country-norway-color-theme.json",
+    "file": "country/country-norway-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -499,7 +500,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Norway",
     "paletteKey": "darkCountryNorway",
-    "file": "dark-country-norway-color-theme.json",
+    "file": "country/dark-country-norway-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -509,7 +510,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Russia",
     "paletteKey": "countryRussia",
-    "file": "country-russia-color-theme.json",
+    "file": "country/country-russia-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -519,7 +520,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Russia",
     "paletteKey": "darkCountryRussia",
-    "file": "dark-country-russia-color-theme.json",
+    "file": "country/dark-country-russia-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -529,7 +530,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Taiwan",
     "paletteKey": "countryTaiwan",
-    "file": "country-taiwan-color-theme.json",
+    "file": "country/country-taiwan-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -539,7 +540,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Taiwan",
     "paletteKey": "darkCountryTaiwan",
-    "file": "dark-country-taiwan-color-theme.json",
+    "file": "country/dark-country-taiwan-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -549,7 +550,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Thai",
     "paletteKey": "countryThai",
-    "file": "country-thai-color-theme.json",
+    "file": "country/country-thai-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -559,7 +560,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Thai",
     "paletteKey": "darkCountryThai",
-    "file": "dark-country-thai-color-theme.json",
+    "file": "country/dark-country-thai-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -569,7 +570,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "UK",
     "paletteKey": "countryUk",
-    "file": "country-uk-color-theme.json",
+    "file": "country/country-uk-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -579,7 +580,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "UK",
     "paletteKey": "darkCountryUk",
-    "file": "dark-country-uk-color-theme.json",
+    "file": "country/dark-country-uk-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -589,7 +590,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Ukraine",
     "paletteKey": "countryUkraine",
-    "file": "country-ukraine-color-theme.json",
+    "file": "country/country-ukraine-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -599,7 +600,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Ukraine",
     "paletteKey": "darkCountryUkraine",
-    "file": "dark-country-ukraine-color-theme.json",
+    "file": "country/dark-country-ukraine-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -609,7 +610,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "USA",
     "paletteKey": "countryUsa",
-    "file": "country-usa-color-theme.json",
+    "file": "country/country-usa-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -619,7 +620,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "USA",
     "paletteKey": "darkCountryUsa",
-    "file": "dark-country-usa-color-theme.json",
+    "file": "country/dark-country-usa-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -629,7 +630,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Viet",
     "paletteKey": "countryViet",
-    "file": "country-viet-color-theme.json",
+    "file": "country/country-viet-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -639,7 +640,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Viet",
     "paletteKey": "darkCountryViet",
-    "file": "dark-country-viet-color-theme.json",
+    "file": "country/dark-country-viet-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -649,7 +650,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "France",
     "paletteKey": "countryFrance",
-    "file": "country-france-color-theme.json",
+    "file": "country/country-france-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -659,7 +660,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "France",
     "paletteKey": "darkCountryFrance",
-    "file": "dark-country-france-color-theme.json",
+    "file": "country/dark-country-france-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -669,7 +670,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Mexico",
     "paletteKey": "countryMexico",
-    "file": "country-mexico-color-theme.json",
+    "file": "country/country-mexico-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -679,7 +680,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Mexico",
     "paletteKey": "darkCountryMexico",
-    "file": "dark-country-mexico-color-theme.json",
+    "file": "country/dark-country-mexico-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -689,7 +690,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Korea",
     "paletteKey": "countryKorea",
-    "file": "country-korea-color-theme.json",
+    "file": "country/country-korea-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -699,7 +700,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Korea",
     "paletteKey": "darkCountryKorea",
-    "file": "dark-country-korea-color-theme.json",
+    "file": "country/dark-country-korea-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -709,7 +710,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Arab",
     "paletteKey": "countryArab",
-    "file": "country-arab-color-theme.json",
+    "file": "country/country-arab-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -719,7 +720,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Arab",
     "paletteKey": "darkCountryArab",
-    "file": "dark-country-arab-color-theme.json",
+    "file": "country/dark-country-arab-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -729,7 +730,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Indonesia",
     "paletteKey": "countryIndonesia",
-    "file": "country-indonesia-color-theme.json",
+    "file": "country/country-indonesia-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -739,7 +740,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Indonesia",
     "paletteKey": "darkCountryIndonesia",
-    "file": "dark-country-indonesia-color-theme.json",
+    "file": "country/dark-country-indonesia-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -749,7 +750,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Netherlands",
     "paletteKey": "countryNetherlands",
-    "file": "country-netherlands-color-theme.json",
+    "file": "country/country-netherlands-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -759,7 +760,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Netherlands",
     "paletteKey": "darkCountryNetherlands",
-    "file": "dark-country-netherlands-color-theme.json",
+    "file": "country/dark-country-netherlands-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -769,7 +770,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Poland",
     "paletteKey": "countryPoland",
-    "file": "country-poland-color-theme.json",
+    "file": "country/country-poland-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -779,7 +780,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Poland",
     "paletteKey": "darkCountryPoland",
-    "file": "dark-country-poland-color-theme.json",
+    "file": "country/dark-country-poland-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -789,7 +790,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Turkey",
     "paletteKey": "countryTurkey",
-    "file": "country-turkey-color-theme.json",
+    "file": "country/country-turkey-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -799,7 +800,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Turkey",
     "paletteKey": "darkCountryTurkey",
-    "file": "dark-country-turkey-color-theme.json",
+    "file": "country/dark-country-turkey-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -809,7 +810,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Sweden",
     "paletteKey": "countrySweden",
-    "file": "country-sweden-color-theme.json",
+    "file": "country/country-sweden-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -819,7 +820,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Sweden",
     "paletteKey": "darkCountrySweden",
-    "file": "dark-country-sweden-color-theme.json",
+    "file": "country/dark-country-sweden-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -829,7 +830,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Denmark",
     "paletteKey": "countryDenmark",
-    "file": "country-denmark-color-theme.json",
+    "file": "country/country-denmark-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -839,7 +840,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Denmark",
     "paletteKey": "darkCountryDenmark",
-    "file": "dark-country-denmark-color-theme.json",
+    "file": "country/dark-country-denmark-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -849,7 +850,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Finland",
     "paletteKey": "countryFinland",
-    "file": "country-finland-color-theme.json",
+    "file": "country/country-finland-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -859,7 +860,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Finland",
     "paletteKey": "darkCountryFinland",
-    "file": "dark-country-finland-color-theme.json",
+    "file": "country/dark-country-finland-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -869,7 +870,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Czech",
     "paletteKey": "countryCzech",
-    "file": "country-czech-color-theme.json",
+    "file": "country/country-czech-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -879,7 +880,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Czech",
     "paletteKey": "darkCountryCzech",
-    "file": "dark-country-czech-color-theme.json",
+    "file": "country/dark-country-czech-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -889,7 +890,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Romania",
     "paletteKey": "countryRomania",
-    "file": "country-romania-color-theme.json",
+    "file": "country/country-romania-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -899,7 +900,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Romania",
     "paletteKey": "darkCountryRomania",
-    "file": "dark-country-romania-color-theme.json",
+    "file": "country/dark-country-romania-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -909,7 +910,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Greece",
     "paletteKey": "countryGreece",
-    "file": "country-greece-color-theme.json",
+    "file": "country/country-greece-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -919,7 +920,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Greece",
     "paletteKey": "darkCountryGreece",
-    "file": "dark-country-greece-color-theme.json",
+    "file": "country/dark-country-greece-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -929,7 +930,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Hungary",
     "paletteKey": "countryHungary",
-    "file": "country-hungary-color-theme.json",
+    "file": "country/country-hungary-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -939,7 +940,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Hungary",
     "paletteKey": "darkCountryHungary",
-    "file": "dark-country-hungary-color-theme.json",
+    "file": "country/dark-country-hungary-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -949,7 +950,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Bulgaria",
     "paletteKey": "countryBulgaria",
-    "file": "country-bulgaria-color-theme.json",
+    "file": "country/country-bulgaria-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -959,7 +960,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Bulgaria",
     "paletteKey": "darkCountryBulgaria",
-    "file": "dark-country-bulgaria-color-theme.json",
+    "file": "country/dark-country-bulgaria-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -969,7 +970,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Kazakhstan",
     "paletteKey": "countryKazakhstan",
-    "file": "country-kazakhstan-color-theme.json",
+    "file": "country/country-kazakhstan-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -979,7 +980,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Kazakhstan",
     "paletteKey": "darkCountryKazakhstan",
-    "file": "dark-country-kazakhstan-color-theme.json",
+    "file": "country/dark-country-kazakhstan-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -989,7 +990,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Philippines",
     "paletteKey": "countryPhilippines",
-    "file": "country-philippines-color-theme.json",
+    "file": "country/country-philippines-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -999,7 +1000,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Philippines",
     "paletteKey": "darkCountryPhilippines",
-    "file": "dark-country-philippines-color-theme.json",
+    "file": "country/dark-country-philippines-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -1009,7 +1010,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Bengal",
     "paletteKey": "countryBengal",
-    "file": "country-bengal-color-theme.json",
+    "file": "country/country-bengal-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -1019,7 +1020,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Bengal",
     "paletteKey": "darkCountryBengal",
-    "file": "dark-country-bengal-color-theme.json",
+    "file": "country/dark-country-bengal-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -1029,7 +1030,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Marathi",
     "paletteKey": "countryMarathi",
-    "file": "country-marathi-color-theme.json",
+    "file": "country/country-marathi-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -1039,7 +1040,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Marathi",
     "paletteKey": "darkCountryMarathi",
-    "file": "dark-country-marathi-color-theme.json",
+    "file": "country/dark-country-marathi-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -1049,7 +1050,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Tamil",
     "paletteKey": "countryTamil",
-    "file": "country-tamil-color-theme.json",
+    "file": "country/country-tamil-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -1059,7 +1060,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Tamil",
     "paletteKey": "darkCountryTamil",
-    "file": "dark-country-tamil-color-theme.json",
+    "file": "country/dark-country-tamil-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -1069,7 +1070,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Telugu",
     "paletteKey": "countryTelugu",
-    "file": "country-telugu-color-theme.json",
+    "file": "country/country-telugu-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -1079,7 +1080,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Telugu",
     "paletteKey": "darkCountryTelugu",
-    "file": "dark-country-telugu-color-theme.json",
+    "file": "country/dark-country-telugu-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -1089,7 +1090,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Hebrew",
     "paletteKey": "countryHebrew",
-    "file": "country-hebrew-color-theme.json",
+    "file": "country/country-hebrew-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -1099,7 +1100,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Hebrew",
     "paletteKey": "darkCountryHebrew",
-    "file": "dark-country-hebrew-color-theme.json",
+    "file": "country/dark-country-hebrew-color-theme.json",
     "uiTheme": "vs-dark"
   },
   {
@@ -1109,7 +1110,7 @@ export const themeCatalog = [
     "group": "country",
     "family": "Swahili",
     "paletteKey": "countrySwahili",
-    "file": "country-swahili-color-theme.json",
+    "file": "country/country-swahili-color-theme.json",
     "uiTheme": "vs"
   },
   {
@@ -1119,7 +1120,10 @@ export const themeCatalog = [
     "group": "country",
     "family": "Swahili",
     "paletteKey": "darkCountrySwahili",
-    "file": "dark-country-swahili-color-theme.json",
+    "file": "country/dark-country-swahili-color-theme.json",
     "uiTheme": "vs-dark"
   }
 ];
+
+/** @type {readonly string[]} */
+export const themeGroups = ["minor","vibe","country"];

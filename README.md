@@ -1,10 +1,14 @@
 # Minor Themes
 
-A collection of VS Code color themes — soft pastels, pride palettes, retro terminals, and country palettes rooted in traditional culture.
+A collection of VS Code color themes in three groups: **Minor** (persona / mood shells), **Vibe** (film, terminal, and cultural atmosphere), and **Country** (traditional cultural palettes).
 
 ## Theme guide
 
-Each palette is defined under `scripts/` (synced from the worldman SOP themes catalog) and shared with the [UiTheme](https://github.com/lenik) project. Light/dark pairs are **separate hand-crafted palettes** — not derived from one another.
+Each palette is defined under `scripts/` (synced from the worldman SOP themes catalog) and shared with the [UiTheme](https://github.com/lenik) project. Light/dark pairs are **separate hand-crafted palettes** — not derived from one another. Generated theme JSON lives in `themes/{minor,vibe,country}/`; the extension manifest lists them in that same group order.
+
+## Minor
+
+Soft persona and identity shells — pastels, pride accents, and character moods.
 
 ### Innocent
 
@@ -37,50 +41,6 @@ Each palette is defined under `scripts/` (synced from the worldman SOP themes ca
 **Light Lesbian** — Dusk on a shared balcony: warm peach shell, sunset-orange intervals, blush-pink glow, deep rose-magenta keywords and cursor — intimate confidence.
 
 **Dark Lesbian** — Skin warmth after sunset: terracotta umber shadow, ember orange and blush pink on cocoa depth — bodily, quiet confidence; distinct from Maiden’s literary rose.
-
-### MS-DOS
-
-**Meaning:** Microsoft DOS — classic 1980s–90s PC text mode. Nostalgic terminal energy; not designed for minimal eye strain.
-
-**MS-DOS** — Saturated IBM blue background, white foreground, yellow strings, green actions, cyan muted text — the familiar DIR / AUTOEXEC.BAT look. Dark-only.
-
-### Matrix II
-
-**Meaning:** Reference to The Matrix (1999) — neon green on near-black; cyberpunk terminal best in a dim room.
-
-**Matrix II** — Neon green (~h 135°) on green-tinted near-black panels. Subtle grid/border greens; cursor and active elements glow. Dark-only.
-
-### X-Files
-
-**Meaning:** The X-Files — FBI basement files, fluorescent bureaucracy, and night woods. Institutional paper by day; forest CRT by night.
-
-**Light X-Files** — J. Edgar Hoover Building: manila-folder cream shell, institutional gray-green text, FBI forest-green cursor, amber highlighter quotes — case files under strip lighting.
-
-**Dark X-Files** — Basement and pine woods: forest-night green-black shell, CRT phosphor pale text, alien-green cursor, flashlight amber glow, classified red accents.
-
-### Only Yesterday
-
-**Meaning:** Only Yesterday (Omohide Poro Poro, 1991) — Studio Ghibli memory of rural Yamagata: safflower, rice gold, countryside green.
-
-**Light Only Yesterday** — Summer memory in sun: sun-washed cream shell, warm brown text, safflower red accents, meadow teal-green intervals, rice-field gold highlights — nostalgic, gentle, sun-faded.
-
-**Dark Only Yesterday** — Tatami at dusk: umber memory shadow, faded cream text, safflower lantern red, golden recall and evening meadow green — warm memory after sunset.
-
-### Morandi
-
-**Meaning:** Named after Giorgio Morandi — dusty, muted, harmonious grays. Gallery-quiet painterly vibe; saturation stays deliberately low.
-
-**Light Morandi** — Warm greige window and blue-gray text. Accents are desaturated teal and dusty rose — nothing neon. Borders soft; contrast restrained but still readable.
-
-**Dark Morandi** — Studio at closing: umber ochre shadow, chalk-dust cool gray text, dusty teal and faded sage accents — pigments whispering in low north light.
-
-### Aroma
-
-**Meaning:** Aroma — warm clay-and-cream botanical practice (Ibvjahst Botanica): terracotta oil bottles, linen daylight, evening resin. Soft, grounded, scent-forward.
-
-**Light Aroma** — Morning apothecary: warm cream shell, near-ink umber text, terracotta clay actions, caramel glow, botanical sage intervals — never purple neon.
-
-**Dark Aroma** — Evening diffuser: resin umber shadow, linen-cream text, caramel cursor and accents, sage hush for intervals — the same clay warmth in low light.
 
 ### Lady
 
@@ -130,6 +90,54 @@ Each palette is defined under `scripts/` (synced from the worldman SOP themes ca
 
 **Dark Moe Girl** — Twilight moe: mauve-night shell, pastel pink cursor, mint glow intervals, soft lemon spark — cute energy kept for dim rooms.
 
+## Vibe
+
+Atmosphere themes — retro terminals, film / TV references, painterly quiet, scent, and story worlds.
+
+### MS-DOS
+
+**Meaning:** Microsoft DOS — classic 1980s–90s PC text mode. Nostalgic terminal energy; not designed for minimal eye strain.
+
+**MS-DOS** — Saturated IBM blue background, white foreground, yellow strings, green actions, cyan muted text — the familiar DIR / AUTOEXEC.BAT look. Dark-only.
+
+### Matrix II
+
+**Meaning:** Reference to The Matrix (1999) — neon green on near-black; cyberpunk terminal best in a dim room.
+
+**Matrix II** — Neon green (~h 135°) on green-tinted near-black panels. Subtle grid/border greens; cursor and active elements glow. Dark-only.
+
+### X-Files
+
+**Meaning:** The X-Files — FBI basement files, fluorescent bureaucracy, and night woods. Institutional paper by day; forest CRT by night.
+
+**Light X-Files** — J. Edgar Hoover Building: manila-folder cream shell, institutional gray-green text, FBI forest-green cursor, amber highlighter quotes — case files under strip lighting.
+
+**Dark X-Files** — Basement and pine woods: forest-night green-black shell, CRT phosphor pale text, alien-green cursor, flashlight amber glow, classified red accents.
+
+### Only Yesterday
+
+**Meaning:** Only Yesterday (Omohide Poro Poro, 1991) — Studio Ghibli memory of rural Yamagata: safflower, rice gold, countryside green.
+
+**Light Only Yesterday** — Summer memory in sun: sun-washed cream shell, warm brown text, safflower red accents, meadow teal-green intervals, rice-field gold highlights — nostalgic, gentle, sun-faded.
+
+**Dark Only Yesterday** — Tatami at dusk: umber memory shadow, faded cream text, safflower lantern red, golden recall and evening meadow green — warm memory after sunset.
+
+### Morandi
+
+**Meaning:** Named after Giorgio Morandi — dusty, muted, harmonious grays. Gallery-quiet painterly vibe; saturation stays deliberately low.
+
+**Light Morandi** — Warm greige window and blue-gray text. Accents are desaturated teal and dusty rose — nothing neon. Borders soft; contrast restrained but still readable.
+
+**Dark Morandi** — Studio at closing: umber ochre shadow, chalk-dust cool gray text, dusty teal and faded sage accents — pigments whispering in low north light.
+
+### Aroma
+
+**Meaning:** Aroma — warm clay-and-cream botanical practice (Ibvjahst Botanica): terracotta oil bottles, linen daylight, evening resin. Soft, grounded, scent-forward.
+
+**Light Aroma** — Morning apothecary: warm cream shell, near-ink umber text, terracotta clay actions, caramel glow, botanical sage intervals — never purple neon.
+
+**Dark Aroma** — Evening diffuser: resin umber shadow, linen-cream text, caramel cursor and accents, sage hush for intervals — the same clay warmth in low light.
+
 ### Liaozhai
 
 **Meaning:** 聊斋 / Liaozhai (Strange Tales from a Chinese Studio) — xuan paper, cinnabar seal, jade fox-fire, moonlit ink.
@@ -146,7 +154,7 @@ Each palette is defined under `scripts/` (synced from the worldman SOP themes ca
 
 **Dark Game of Thrones** — Night’s Watch black shell, ice-blue CRT text, blood-crimson cursor, Lannister gold glow — winter is coming chrome.
 
-### Country themes
+## Country
 
 **Meaning:** Each palette draws on **classic cultural color expression** — landscape, craft, ritual, and everyday beauty — not national flags. Every country has **Light** and **Dark** variants as independent palettes.
 
