@@ -582,6 +582,11 @@
   },
   "scripts": {
     "generate": "node scripts/generate-themes.mjs",
+    "generate:apps": "node scripts/generate-apps.mjs",
+    "package:eclipse": "node scripts/package-apps.mjs eclipse",
+    "package:intellij": "node scripts/package-apps.mjs intellij",
+    "package:emacs": "node scripts/package-apps.mjs emacs",
+    "package:apps": "node scripts/package-apps.mjs all",
     "refactor-rgb2hsl": "node scripts/refactor-rgb2hsl.mjs",
     "refactor-palette-hsl": "node scripts/refactor-palette-hsl.mjs",
     "vscode:prepublish": "pnpm run generate",

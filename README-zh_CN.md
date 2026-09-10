@@ -227,10 +227,14 @@ pnpm run package
 
 ```bash
 pnpm install
-pnpm run sync       # 从 worldman SOP themes 回吸最新色板
-pnpm run generate   # 重新生成 themes/*.json
-pnpm run package    # 打包 .vsix（prepublish 会先 generate）
+pnpm run sync            # 从 worldman SOP themes 回吸最新色板
+pnpm run generate        # 重新生成 VS Code themes/*.json
+pnpm run generate:apps   # 重新生成 apps/{eclipse,intellij,emacs}/
+pnpm run package         # 打包 .vsix（prepublish 会先 generate）
+pnpm run package:apps    # 打包 Eclipse / IntelliJ / Emacs 到 dist/
 ```
+
+各 IDE 安装说明见 [`apps/README.md`](apps/README.md)。
 
 ## 许可
 

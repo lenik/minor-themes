@@ -3,4 +3,19 @@
 .DS_Store
 node_modules/
 themes/
+dist/
 
+# Generated app theme trees (keep apps/README.md via negation after generate)
+apps/eclipse/
+apps/intellij/
+apps/emacs/
+
+# Icon WIP / source composites (ship only image-512.png)
+assets/back*.jpg
+assets/back*.png
+assets/front*.jpg
+assets/front*.png
+assets/lay*.jpg
+assets/lay*.png
+assets/image.jpg
+assets/image-512a.png

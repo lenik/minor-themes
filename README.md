@@ -227,10 +227,14 @@ Install the generated `.vsix` via **Extensions → … → Install from VSIX…*
 
 ```bash
 pnpm install
-pnpm run sync       # pull latest palettes from worldman SOP themes
-pnpm run generate   # regenerate themes/*.json
-pnpm run package    # build .vsix (runs generate via prepublish)
+pnpm run sync            # pull latest palettes from worldman SOP themes
+pnpm run generate        # regenerate VS Code themes/*.json
+pnpm run generate:apps   # regenerate apps/{eclipse,intellij,emacs}/
+pnpm run package         # build .vsix (runs generate via prepublish)
+pnpm run package:apps    # zip/jar Eclipse, IntelliJ, and Emacs packages into dist/
 ```
+
+See [`apps/README.md`](apps/README.md) for installing themes in Eclipse, IntelliJ IDEA, and Emacs.
 
 ## License
 

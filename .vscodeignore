@@ -13,3 +13,5 @@ assets/front*
 assets/lay*
 assets/image.jpg
 assets/image-512a.png
+apps/**
+dist/**
